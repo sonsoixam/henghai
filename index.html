@@ -8,7 +8,7 @@
 
     <!-- BS4 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
 
     <!-- FONT AWESOME  -->
@@ -16,694 +16,1133 @@
 
     <!-- FONT GOOGLE -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap"
-          rel="stylesheet">
+        rel="stylesheet">
 
     <!-- OWL CAROUSEL -->
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
 
     <!-- SWIPER CAROUSEL -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-<!-- HEADER -->
-<header id="hederStandard">
-    <div class="headertop">
-        <div class="row align-items-center">
-            <div class="col-2">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    <!-- HEADER -->
+    <header id="hederStandard">
+        <div class="headertop">
+            <div class="row align-items-center">
+                <div class="col-2">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon menu-icon"><i class="fa fa-bars bar-icon"></i><i
                                 class="fa fa-times times-icon"></i></span>
-                </button>
-            </div>
-            <div class="col-8">
-                <p class="header__logo">
-                    <a href="#"><img src="./img/logo.png" alt="logo"></a>
-                </p>
-            </div>
-            <div class="col-2">
-                <div class="messenger">
-                    <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+                    </button>
                 </div>
-            </div>
-        </div>
-    </div>
-    <form class="header__search">
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Bạn cần tìm gì">
-            <div class="input-group-append">
-                    <span class="input-group-text" id="basic-addon2">
-                        <i class="fa fa-search"></i>
-                    </span>
-            </div>
-        </div>
-    </form>
-    <nav class="navbar navbar-light bg-light">
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav row">
-                <div class="col-3">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
-                            <img alt="IPhone" src="./img/IPhone.png">
-                            <p>IPhone</p>
-                        </a>
-                    </li>
+                <div class="col-8">
+                    <p class="header__logo">
+                        <a href="#"><img src="./img/logo.png" alt="logo"></a>
+                    </p>
                 </div>
-                <div class="col-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <img alt="IPad" src="./img/IPad.png">
-                            <p>IPad</p>
-                        </a>
-                    </li>
-                </div>
-                <div class="col-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <img alt="AppleWatch" src="./img/AppleWatch.png">
-                            <p>AppleWatch</p>
-                        </a>
-                    </li>
-                </div>
-                <div class="col-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <img alt="AirPod" src="./img/AirPod.png">
-                            <p>AirPod</p>
-                        </a>
-                    </li>
-                </div>
-                <div class="col-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <img alt="MacBook" src="./img/MacBook.png">
-                            <p>MacBook</p>
-                        </a>
-                    </li>
-                </div>
-                <div class="col-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <img alt="SimData" src="./img/SimData.png">
-                            <p>SimData</p>
-                        </a>
-                    </li>
-                </div>
-                <div class="col-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <img class="w-80" alt="Wifi" src="./img/Wifi.png">
-                            <p>Wifi Cầm Tay</p>
-                        </a>
-                    </li>
-                </div>
-            </ul>
-        </div>
-    </nav>
-</header>
-<header id="headerFixed" class="d-block">
-    <div class="headertop">
-        <div class="row align-items-center justify-content-between">
-            <div class="col-2 headertop__item logoFixed">
-                <p class="mb-0  text-center">
-                    <a href="#" class="d-block">
-                        <img class="img-fluid d-inlineblock logoFixed" src="./img/LogoMinipng.png"
-                             alt="LogoMenuFixed1">
-                        <img class="img-fluid logoStandard" src="./img/logo.png" alt="LogoMenuFixed2">
-                    </a>
-                </p>
-            </div>
-            <form class="col-7 header__search headertop__item">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Bạn cần tìm gì">
-                    <div class="input-group-append">
-                            <span class="input-group-text" id="basic-addon2">
-                                <i class="fa fa-search"></i>
-                            </span>
+                <div class="col-2">
+                    <div class="messenger">
+                        <a href="#"><i class="fab fa-facebook-messenger"></i></a>
                     </div>
                 </div>
-            </form>
-            <div class="col-1 headertop__item text-center">
-                <div class="messenger text-center">
-                    <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+            </div>
+        </div>
+        <form class="header__search">
+            <div class="input-group">
+                <input id="search" type="text" class="form-control input-searchStandard" placeholder="Bạn cần tìm gì">
+                <div class="input-group-append">
+                    <span class="input-group-text button-searchStandar" id="basic-addon2">
+                        <i class="fa fa-search"></i>
+                    </span>
                 </div>
             </div>
-            <div class="col-1 headertop__item ">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavFixed"
+            <div class="searchStandard-list header__search-list" style="display:none">
+                <div class="product-item-shortcut">
+                    <a class="row" href="#" title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
+                        <div class="col-2 product-item-shortcut__thumb">
+                            <img class="" src="./img/Color_Blue.png" alt="">
+                        </div>
+                        <div class="col-10 product-item-shortcut__content">
+                            <h3 class="product-item-shortcut__title">
+                                iPhone 12 Pro Max Quốc Tế Chính Hãng
+                            </h3>
+                            <div class="product-item-shortcut__price">
+
+                                <span class="price__original">124.800 ¥</span>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item-shortcut">
+                    <a class="row" href="#" title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
+                        <div class="col-2 product-item-shortcut__thumb">
+                            <img class="" src="./img/Color_Blue.png" alt="">
+                        </div>
+                        <div class="col-10 product-item-shortcut__content">
+                            <h3 class="product-item-shortcut__title">
+                                iPhone 12 Pro Quốc Tế Chính Hãng
+                            </h3>
+                            <div class="product-item-shortcut__price">
+
+                                <span class="price__original">152.000 ¥</span>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item-shortcut">
+                    <a class="row" href="#" title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
+                        <div class="col-2 product-item-shortcut__thumb">
+                            <img class="" src="./img/Color_Blue.png" alt="">
+                        </div>
+                        <div class="col-10 product-item-shortcut__content">
+                            <h3 class="product-item-shortcut__title">
+                                iPhone 12 Pro Quốc Tế Chính Hãng
+                            </h3>
+                            <div class="product-item-shortcut__price">
+
+                                <span class="price__original">152.000 ¥</span>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item-shortcut">
+                    <a class="row" href="#" title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
+                        <div class="col-2 product-item-shortcut__thumb">
+                            <img class="" src="./img/Color_Blue.png" alt="">
+                        </div>
+                        <div class="col-10 product-item-shortcut__content">
+                            <h3 class="product-item-shortcut__title">
+                                iPhone 11 Pro Max Quốc Tế Chính Hãng
+                            </h3>
+                            <div class="product-item-shortcut__price">
+
+                                <span class="price__original">152.000 ¥</span>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item-shortcut">
+                    <a class="row" href="#" title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
+                        <div class="col-2 product-item-shortcut__thumb">
+                            <img class="" src="./img/Color_Blue.png" alt="">
+                        </div>
+                        <div class="col-10 product-item-shortcut__content">
+                            <h3 class="product-item-shortcut__title">
+                                iPhone 11 Pro Quốc Tế Chính Hãng
+                            </h3>
+                            <div class="product-item-shortcut__price">
+
+                                <span class="price__original">152.000 ¥</span>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </form>
+        <nav class="navbar navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav row">
+                    <div class="col-3">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                <img alt="IPhone" src="./img/IPhone.png">
+                                <p>IPhone</p>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="col-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img alt="IPad" src="./img/IPad.png">
+                                <p>IPad</p>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="col-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img alt="AppleWatch" src="./img/AppleWatch.png">
+                                <p>AppleWatch</p>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="col-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img alt="AirPod" src="./img/AirPod.png">
+                                <p>AirPod</p>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="col-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img alt="MacBook" src="./img/MacBook.png">
+                                <p>MacBook</p>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="col-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img alt="SimData" src="./img/SimData.png">
+                                <p>SimData</p>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="col-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img class="w-80" alt="Wifi" src="./img/Wifi.png">
+                                <p>Wifi Cầm Tay</p>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <header id="headerFixed" class="d-block">
+        <div class="headertop">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-2 headertop__item logoFixed">
+                    <p class="mb-0  text-center">
+                        <a href="#" class="d-block">
+                            <img class="img-fluid d-inlineblock logoFixed" src="./img/LogoMinipng.png"
+                                alt="LogoMenuFixed1">
+                            <img class="img-fluid logoStandard" src="./img/logo.png" alt="LogoMenuFixed2">
+                        </a>
+                    </p>
+                </div>
+                <form class="col-7 header__search headertop__item">
+                    <div class="input-group">
+                        <input type="text" class="form-control input-searchFixed" placeholder="Bạn cần tìm gì">
+                        <div class="input-group-append">
+                            <span class="input-group-text button-searchFixed" id="basic-addon2">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="searchFixed-list header__search-list" style="display:none">
+                        <div class="product-item-shortcut">
+                            <a class="row" href="#" title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
+                                <div class="col-2 product-item-shortcut__thumb">
+                                    <img class="" src="./img/Color_Blue.png" alt="">
+                                </div>
+                                <div class="col-10 product-item-shortcut__content">
+                                    <h3 class="product-item-shortcut__title">
+                                        iPhone 12 Pro Max Quốc Tế Chính Hãng
+                                    </h3>
+                                    <div class="product-item-shortcut__price">
+                                        <span class="price__original">124.800 ¥</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product-item-shortcut">
+                            <a class="row" href="#" title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
+                                <div class="col-2 product-item-shortcut__thumb">
+                                    <img class="" src="./img/Color_Blue.png" alt="">
+                                </div>
+                                <div class="col-10 product-item-shortcut__content">
+                                    <h3 class="product-item-shortcut__title">
+                                        iPhone 12 Pro Quốc Tế Chính Hãng
+                                    </h3>
+                                    <div class="product-item-shortcut__price">
+
+                                        <span class="price__original">152.000 ¥</span>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product-item-shortcut">
+                            <a class="row" href="#" title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
+                                <div class="col-2 product-item-shortcut__thumb">
+                                    <img class="" src="./img/Color_Blue.png" alt="">
+                                </div>
+                                <div class="col-10 product-item-shortcut__content">
+                                    <h3 class="product-item-shortcut__title">
+                                        iPhone 12 Pro Quốc Tế Chính Hãng
+                                    </h3>
+                                    <div class="product-item-shortcut__price">
+
+                                        <span class="price__original">152.000 ¥</span>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product-item-shortcut">
+                            <a class="row" href="#" title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
+                                <div class="col-2 product-item-shortcut__thumb">
+                                    <img class="" src="./img/Color_Blue.png" alt="">
+                                </div>
+                                <div class="col-10 product-item-shortcut__content">
+                                    <h3 class="product-item-shortcut__title">
+                                        iPhone 11 Pro Max Quốc Tế Chính Hãng
+                                    </h3>
+                                    <div class="product-item-shortcut__price">
+
+                                        <span class="price__original">152.000 ¥</span>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product-item-shortcut">
+                            <a class="row" href="#" title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
+                                <div class="col-2 product-item-shortcut__thumb">
+                                    <img class="" src="./img/Color_Blue.png" alt="">
+                                </div>
+                                <div class="col-10 product-item-shortcut__content">
+                                    <h3 class="product-item-shortcut__title">
+                                        iPhone 11 Pro Quốc Tế Chính Hãng
+                                    </h3>
+                                    <div class="product-item-shortcut__price">
+
+                                        <span class="price__original">152.000 ¥</span>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+                <div class="col-1 headertop__item text-center">
+                    <div class="messenger text-center">
+                        <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+                    </div>
+                </div>
+                <div class="col-1 headertop__item ">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavFixed"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon menu-icon"><i class="fa fa-bars bar-icon__fixed"></i><i
                                 class="fa fa-times times-icon__fixed"></i></span>
-                </button>
-            </div>
+                    </button>
+                </div>
 
-        </div>
-    </div>
-    <nav class="navbar navbar-light bg-light">
-        <div class="collapse navbar-collapse" id="navbarNavFixed">
-            <ul class="navbar-nav row">
-                <div class="col-3">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
-                            <img alt="IPhone" src="./img/IPhone.png">
-                            <p>IPhone</p>
-                        </a>
-                    </li>
-                </div>
-                <div class="col-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <img alt="IPad" src="./img/IPad.png">
-                            <p>IPad</p>
-                        </a>
-                    </li>
-                </div>
-                <div class="col-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <img alt="AppleWatch" src="./img/AppleWatch.png">
-                            <p>AppleWatch</p>
-                        </a>
-                    </li>
-                </div>
-                <div class="col-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <img alt="AirPod" src="./img/AirPod.png">
-                            <p>AirPod</p>
-                        </a>
-                    </li>
-                </div>
-                <div class="col-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <img alt="MacBook" src="./img/MacBook.png">
-                            <p>MacBook</p>
-                        </a>
-                    </li>
-                </div>
-                <div class="col-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <img alt="SimData" src="./img/SimData.png">
-                            <p>SimData</p>
-                        </a>
-                    </li>
-                </div>
-                <div class="col-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <img class="w-80" alt="Wifi" src="./img/Wifi.png">
-                            <p>Wifi Cầm Tay</p>
-                        </a>
-                    </li>
-                </div>
-            </ul>
-        </div>
-    </nav>
-</header>
-<div class="body__content">
-    <!-- BANNER  -->
-    <section class="banner">
-        <div class="owl-carousel owl-theme banner__carousel">
-            <div class="item">
-                <a href="#"><img class="d-block w-100" src="./img/Image_1.png" alt="banner1"></a>
-            </div>
-            <div class="item">
-                <a href="#"><img class="d-block w-100" src="./img/Image_1.png" alt="banner2"></a>
-            </div>
-            <div class="item">
-                <a href="#"><img class="d-block w-100" src="./img/Image_1.png" alt="banner3"></a>
-            </div>
-            <div class="item">
-                <a href="#"><img class="d-block w-100" src="./img/Image_1.png" alt="banner4"></a>
-            </div>
-            <div class="item">
-                <a href="#"><img class="d-block w-100" src="./img/Image_1.png" alt="banner5"></a>
-            </div>
-            <div class="item">
-                <a href="#"><img class="d-block w-100" src="./img/Image_1.png" alt="banner6"></a>
             </div>
         </div>
-    </section>
-    <!-- CATEGORIES -->
-    <section class="categories section">
-        <div class="categories__content">
-            <div class="row">
-                <div class="col-3">
-                    <div class="categories__item">
-                        <a href="#">
-                            <img alt="IPhone" src="./img/IPhone.png">
-                        </a>
-                        <span class="categories__title">Iphone</span>
+        <nav class="navbar navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarNavFixed">
+                <ul class="navbar-nav row">
+                    <div class="col-3">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                <img alt="IPhone" src="./img/IPhone.png">
+                                <p>IPhone</p>
+                            </a>
+                        </li>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="categories__item">
-                        <a href="#">
-                            <img alt="IPad" src="./img/IPad.png">
-                        </a>
-                        <span class="categories__title">IPad</span>
+                    <div class="col-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img alt="IPad" src="./img/IPad.png">
+                                <p>IPad</p>
+                            </a>
+                        </li>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="categories__item">
-                        <a href="#">
-                            <img alt="AppleWatch" src="./img/AppleWatch.png">
-                        </a>
-                        <span class="categories__title">AppleWatch</span>
+                    <div class="col-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img alt="AppleWatch" src="./img/AppleWatch.png">
+                                <p>AppleWatch</p>
+                            </a>
+                        </li>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="categories__item">
-                        <a href="#">
-                            <img alt="AirPod" src="./img/AirPod.png">
-                        </a>
-                        <span class="categories__title">AirPod</span>
+                    <div class="col-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img alt="AirPod" src="./img/AirPod.png">
+                                <p>AirPod</p>
+                            </a>
+                        </li>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="categories__item">
-                        <a href="#">
-                            <img alt="MacBook" src="./img/MacBook.png">
-                        </a>
-                        <span class="categories__title">MacBook</span>
+                    <div class="col-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img alt="MacBook" src="./img/MacBook.png">
+                                <p>MacBook</p>
+                            </a>
+                        </li>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="categories__item">
-                        <a href="#">
-                            <img alt="SimData" src="./img/SimData.png">
-                        </a>
-                        <span class="categories__title">SimData</span>
+                    <div class="col-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img alt="SimData" src="./img/SimData.png">
+                                <p>SimData</p>
+                            </a>
+                        </li>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="categories__item">
-                        <a href="#">
-                            <img alt="Wifi" src="./img/Wifi.png">
-                        </a>
-                        <span class="categories__title">Wifi Cầm Tay</span>
+                    <div class="col-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img class="w-80" alt="Wifi" src="./img/Wifi.png">
+                                <p>Wifi Cầm Tay</p>
+                            </a>
+                        </li>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- SELLING PRODUCTS -->
-    <section class="products section">
-        <div class="products__content">
-            <div class="">
-                <p class="products__title">IPhone Bán Chạy Nhất</p>
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#iphone12" role="tab">IPhone 12</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#iphone11" role="tab">Iphone
-                            11</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#iphoneX" role="tab">IPhone
-                            X</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#iphone8" role="tab">IPhone
-                            8</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#iphone7" role="tab">IPhone
-                            7</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#iphone6" role="tab">IPhone
-                            6</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#oldIPhone" role="tab">Máy Cũ
-                            Giá Rẻ</a>
-                    </li>
                 </ul>
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="iphone12" role="tabpanel" aria-labelledby="iphone12">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div data-id="1" class="card swiper-slide">
-                                    <img src="./img/ImgCard_IPhone12ProMax.png" class="card-img-top" alt="CardNo1">
-                                    <div class="card-body">
-                                        <div class="">
-                                            <p class="card-text">iPhone 12 Pro Max Quốc Tế
-                                                Chính Hãng 1</p>
-                                        </div>
-                                        <div class="card__memory">
-                                            <ul class="row card__memory-content">
-                                                <div class="col-div col-4">
-                                                    <li data-capacity="128" class="card__memory-item"><a
-                                                            class="memory-item active"
-                                                            href="#">128 GB</a></li>
-                                                </div>
-                                                <div class="col-div col-4">
-                                                    <li data-capacity="256" class="card__memory-item"><a
-                                                            class="memory-item"
-                                                            href="#">256
-                                                        GB</a></li>
-                                                </div>
-                                                <div class="col-div col-4">
-                                                    <li data-capacity="512" class="card__memory-item"><a
-                                                            class="memory-item"
-                                                            href="#">512
-                                                        GB</a></li>
-                                                </div>
-                                                <div class="col-div col-4">
-                                                    <li data-capacity="1024" class="card__memory-item"><a
-                                                            class="memory-item"
-                                                            href="#">1TB
-                                                        GB</a></li>
-                                                </div>
-                                            </ul>
-                                        </div>
-                                        <div class="card__color">
-                                            <ul class="row card__color-content">
-                                                <div class="col-div col-3">
-                                                    <li data-color="blue" class="card__color-item">
-                                                        <a class="item" href="#">
-                                                            <img class="active" src="./img/Color_Blue.png"
-                                                                 alt="blue">
-                                                        </a>
-                                                    </li>
-                                                </div>
-                                                <div class="col-div col-3">
-                                                    <li data-color="silver" class="card__color-item">
-                                                        <a class="item" href="#"><img
-                                                            src="./img/Color_Silver.png" alt="silver"></a>
-                                                    </li>
-                                                </div>
-                                                <div class="col-div col-3">
-                                                    <li data-color="gray" class="card__color-item">
-                                                        <a class="item" href="#"><img
-                                                            src="./img/Color_Gray.png" alt="gray"></a>
-                                                    </li>
-                                                </div>
-                                                <div class="col-div col-3">
-                                                    <li data-color="gold" class="card__color-item"><a class="item" href="#"><img
-                                                            src="./img/Color_Gold.png" alt="gold"></a>
-                                                    </li>
-                                                </div>
-                                            </ul>
-                                        </div>
-                                        <div class="card__price">
-                                            <span>10.000¥</span>
-                                        </div>
-                                        <div class="card__presents">
-                                            <p>Tặng mã giảm giá RTYH trị giá 1.000 ¥</p>
-                                            <p>Tặng ốp cường lực con voi</p>
-                                        </div>
-                                        <button class="btn w-100">Mua Ngay</button>
-                                    </div>
-                                </div>
-                                <div data-id="2" class="card swiper-slide">
-                                    <img src="./img/ImgCard_IPhone12ProMax.png" class="card-img-top" alt="CardNo1">
-                                    <div class="card-body">
-                                        <div class="">
-                                            <p class="card-text">iPhone 12 Pro Max Quốc Tế
-                                                Chính Hãng 1</p>
-                                        </div>
-                                        <div class="card__memory">
-                                            <ul class="row card__memory-content">
-                                                <div class="col-div col-4">
-                                                    <li data-capacity="128" class="card__memory-item"><a
-                                                            class="memory-item active"
-                                                            href="#">128 GB</a></li>
-                                                </div>
-                                                <div class="col-div col-4">
-                                                    <li data-capacity="256" class="card__memory-item"><a
-                                                            class="memory-item"
-                                                            href="#">256
-                                                        GB</a></li>
-                                                </div>
-                                                <div class="col-div col-4">
-                                                    <li data-capacity="512" class="card__memory-item"><a
-                                                            class="memory-item"
-                                                            href="#">512
-                                                        GB</a></li>
-                                                </div>
-                                                <div class="col-div col-4">
-                                                    <li data-capacity="1024" class="card__memory-item"><a
-                                                            class="memory-item"
-                                                            href="#">1TB
-                                                        GB</a></li>
-                                                </div>
-                                            </ul>
-                                        </div>
-                                        <div class="card__color">
-                                            <ul class="row card__color-content">
-                                                <div class="col-div col-3">
-                                                    <li data-color="blue" class="card__color-item">
-                                                        <a class="item" href="#">
-                                                            <img class="active" src="./img/Color_Blue.png"
-                                                                 alt="blue">
-                                                        </a>
-                                                    </li>
-                                                </div>
-                                                <div class="col-div col-3">
-                                                    <li data-color="silver" class="card__color-item">
-                                                        <a class="item" href="#"><img
-                                                                src="./img/Color_Silver.png" alt="silver"></a>
-                                                    </li>
-                                                </div>
-                                                <div class="col-div col-3">
-                                                    <li data-color="gray" class="card__color-item">
-                                                        <a class="item" href="#"><img
-                                                                src="./img/Color_Gray.png" alt="gray"></a>
-                                                    </li>
-                                                </div>
-                                                <div class="col-div col-3">
-                                                    <li data-color="gold" class="card__color-item"><a class="item" href="#"><img
-                                                            src="./img/Color_Gold.png" alt="gold"></a>
-                                                    </li>
-                                                </div>
-                                            </ul>
-                                        </div>
-                                        <div class="card__price">
-                                            <span>10.000¥</span>
-                                        </div>
-                                        <div class="card__presents">
-                                            <p>Tặng mã giảm giá RTYH trị giá 1.000 ¥</p>
-                                            <p>Tặng ốp cường lực con voi</p>
-                                        </div>
-                                        <button class="btn w-100">Mua Ngay</button>
-                                    </div>
-                                </div>
-                                <div data-id="3" class="card swiper-slide">
-                                    <img src="./img/ImgCard_IPhone12ProMax.png" class="card-img-top" alt="CardNo1">
-                                    <div class="card-body">
-                                        <div class="">
-                                            <p class="card-text">iPhone 12 Pro Max Quốc Tế
-                                                Chính Hãng 1</p>
-                                        </div>
-                                        <div class="card__memory">
-                                            <ul class="row card__memory-content">
-                                                <div class="col-div col-4">
-                                                    <li data-capacity="128" class="card__memory-item"><a
-                                                            class="memory-item active"
-                                                            href="#">128 GB</a></li>
-                                                </div>
-                                                <div class="col-div col-4">
-                                                    <li data-capacity="256" class="card__memory-item"><a
-                                                            class="memory-item"
-                                                            href="#">256
-                                                        GB</a></li>
-                                                </div>
-                                                <div class="col-div col-4">
-                                                    <li data-capacity="512" class="card__memory-item"><a
-                                                            class="memory-item"
-                                                            href="#">512
-                                                        GB</a></li>
-                                                </div>
-                                                <div class="col-div col-4">
-                                                    <li data-capacity="1024" class="card__memory-item"><a
-                                                            class="memory-item"
-                                                            href="#">1TB
-                                                        GB</a></li>
-                                                </div>
-                                            </ul>
-                                        </div>
-                                        <div class="card__color">
-                                            <ul class="row card__color-content">
-                                                <div class="col-div col-3">
-                                                    <li data-color="blue" class="card__color-item">
-                                                        <a class="item" href="#">
-                                                            <img class="active" src="./img/Color_Blue.png"
-                                                                 alt="blue">
-                                                        </a>
-                                                    </li>
-                                                </div>
-                                                <div class="col-div col-3">
-                                                    <li data-color="silver" class="card__color-item">
-                                                        <a class="item" href="#"><img
-                                                                src="./img/Color_Silver.png" alt="silver"></a>
-                                                    </li>
-                                                </div>
-                                                <div class="col-div col-3">
-                                                    <li data-color="gray" class="card__color-item">
-                                                        <a class="item" href="#"><img
-                                                                src="./img/Color_Gray.png" alt="gray"></a>
-                                                    </li>
-                                                </div>
-                                                <div class="col-div col-3">
-                                                    <li data-color="gold" class="card__color-item"><a class="item" href="#"><img
-                                                            src="./img/Color_Gold.png" alt="gold"></a>
-                                                    </li>
-                                                </div>
-                                            </ul>
-                                        </div>
-                                        <div class="card__price">
-                                            <span>10.000¥</span>
-                                        </div>
-                                        <div class="card__presents">
-                                            <p>Tặng mã giảm giá RTYH trị giá 1.000 ¥</p>
-                                            <p>Tặng ốp cường lực con voi</p>
-                                        </div>
-                                        <button class="btn w-100">Mua Ngay</button>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="swiper-button-prev">
-                                <i class="fa fa-chevron-left"></i>
-                            </div>
-                            <div class="swiper-button-next">
-                                <i class="fa fa-chevron-right"></i>
-                            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="body__content">
+        <!-- BANNER  -->
+        <section class="banner">
+            <div class="owl-carousel owl-theme banner__carousel">
+                <div class="item">
+                    <a href="#"><img class="d-block w-100" src="./img/Image_1.png" alt="banner1"></a>
+                </div>
+                <div class="item">
+                    <a href="#"><img class="d-block w-100" src="./img/Image_1.png" alt="banner2"></a>
+                </div>
+                <div class="item">
+                    <a href="#"><img class="d-block w-100" src="./img/Image_1.png" alt="banner3"></a>
+                </div>
+                <div class="item">
+                    <a href="#"><img class="d-block w-100" src="./img/Image_1.png" alt="banner4"></a>
+                </div>
+                <div class="item">
+                    <a href="#"><img class="d-block w-100" src="./img/Image_1.png" alt="banner5"></a>
+                </div>
+                <div class="item">
+                    <a href="#"><img class="d-block w-100" src="./img/Image_1.png" alt="banner6"></a>
+                </div>
+            </div>
+        </section>
+        <!-- CATEGORIES -->
+        <section class="categories section">
+            <div class="categories__content">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="categories__item">
+                            <a href="#">
+                                <img alt="IPhone" src="./img/IPhone.png">
+                            </a>
+                            <span class="categories__title">Iphone</span>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="iphone11" role="tabpanel" aria-labelledby="iphone11">
-
+                    <div class="col-3">
+                        <div class="categories__item">
+                            <a href="#">
+                                <img alt="IPad" src="./img/IPad.png">
+                            </a>
+                            <span class="categories__title">IPad</span>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="iphoneX" role="tabpanel" aria-labelledby="iphoneX">
-
+                    <div class="col-3">
+                        <div class="categories__item">
+                            <a href="#">
+                                <img alt="AppleWatch" src="./img/AppleWatch.png">
+                            </a>
+                            <span class="categories__title">AppleWatch</span>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="iphone8" role="tabpanel" aria-labelledby="iphone8">
-
+                    <div class="col-3">
+                        <div class="categories__item">
+                            <a href="#">
+                                <img alt="AirPod" src="./img/AirPod.png">
+                            </a>
+                            <span class="categories__title">AirPod</span>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="iphone7" role="tabpanel" aria-labelledby="iphone7">
-
+                    <div class="col-3">
+                        <div class="categories__item">
+                            <a href="#">
+                                <img alt="MacBook" src="./img/MacBook.png">
+                            </a>
+                            <span class="categories__title">MacBook</span>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="iphone6" role="tabpanel" aria-labelledby="iphone6">
-
+                    <div class="col-3">
+                        <div class="categories__item">
+                            <a href="#">
+                                <img alt="SimData" src="./img/SimData.png">
+                            </a>
+                            <span class="categories__title">SimData</span>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="oldIPhone" role="tabpanel" aria-labelledby="oldIPhone">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- FOOTER  -->
-    <footer>
-        <div class="footer__content section">
-            <div class="main-content content1">
-                <div class="row">
-                    <div class="col-7 footer__item">
-                        <h6>Thông Tin Công Ty</h6>
-                        <div class="underLine"></div>
-                        <p>Giới thiệu</p>
-                        <p>Hướng dẫn mua hàng</p>
-                        <p>Thẻ ngân hàng</p>
-                    </div>
-                    <div class="col-5 footer__item">
-                        <h6>Chính Sách</h6>
-                        <div class="underLine"></div>
-                        <p>Chính sách bảo hành</p>
-                        <p>Chính sách hoạt động</p>
-                        <p>Bảo hành tại Nhật Bản</p>
-                        <p>Bảo hành tại Việt Nam</p>
-                    </div>
-                    <div class="col-7 footer__item">
-                        <h6>Liên Hệ</h6>
-                        <div class="underLine"></div>
-                        <p>HotLine : 0809.346.6789</p>
-                        <p>Email : hoanghai1710021@gmail.com</p>
-                    </div>
-                    <div class="col-5 footer__item">
-                        <h6>Các Chi Nhánh</h6>
-                        <div class="underLine"></div>
-                        <p>Chi nhánh Otsuka Tokyo</p>
-                        <p>Chi nhánh Osu Nagoya</p>
-                        <p>Chi nhánh Việt Nam</p>
+                    <div class="col-3">
+                        <div class="categories__item">
+                            <a href="#">
+                                <img alt="Wifi" src="./img/Wifi.png">
+                            </a>
+                            <span class="categories__title">Wifi Cầm Tay</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="main-content content2">
-                <div class="row content2">
-                    <div class="col-4 footer__item">
-                        <h6>Thông Tin Công Ty</h6>
-                        <div class="underLine"></div>
-                        <p>Giới thiệu</p>
-                        <p>Hướng dẫn mua hàng</p>
-                        <p>Thẻ ngân hàng</p>
-                    </div>
-                    <div class="col-4 footer__item">
-                        <h6>Chính Sách</h6>
-                        <div class="underLine"></div>
-                        <p>Chính sách bảo hành</p>
-                        <p>Chính sách hoạt động</p>
-                        <p>Bảo hành tại Nhật Bản</p>
-                        <p>Bảo hành tại Việt Nam</p>
-                    </div>
-                    <div class="col-4 footer__item">
-                        <h6>Các Chi Nhánh</h6>
-                        <div class="underLine"></div>
-                        <p>Chi nhánh Otsuka Tokyo</p>
-                        <p>Chi nhánh Osu Nagoya</p>
-                        <p>Chi nhánh Việt Nam</p>
-                    </div>
-                    <div class="col-12 footer__item">
-                        <h6>Liên Hệ</h6>
-                        <div class="underLine"></div>
-                        <p>HotLine : 0809.346.6789</p>
-                        <p>Email : hoanghai1710021@gmail.com</p>
-                    </div>
+        </section>
+        <!-- SELLING IPHONE PRODUCTS  -->
+        <section class="products iphone section">
+            <div class="products__content">
+                <div class="">
+                    <p class="products__title">IPhone Bán Chạy Nhất</p>
+                    <ul class="nav nav-tabs list__iphone" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-subcategory="iphone12" data-toggle="tab" href="#iphone12"
+                                role="tab">IPhone 12</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-subcategory="iphone11" data-toggle="tab" href="#iphone11"
+                                role="tab">Iphone
+                                11</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-subcategory="iphoneX" data-toggle="tab" href="#iphoneX"
+                                role="tab">IPhone
+                                X</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-subcategory="iphone8" data-toggle="tab" href="#iphone8"
+                                role="tab">IPhone
+                                8</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-subcategory="iphone7" data-toggle="tab" href="#iphone7"
+                                role="tab">IPhone
+                                7</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-subcategory="iphone6" data-toggle="tab" href="#iphone6"
+                                role="tab">IPhone
+                                6</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-subcategory="oldIphone" data-toggle="tab" href="#oldIPhone"
+                                role="tab">Máy Cũ
+                                Giá Rẻ</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="iphone12" role="tabpanel" aria-labelledby="iphone12">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div data-id="iphone12_1" class="card swiper-slide">
+                                        <img src="./img/ImgCard_IPhone12ProMax.png" class="card-img-top" alt="CardNo1">
+                                        <div class="card-body">
+                                            <div class="">
+                                                <p class="card-text">iPhone 12 Pro Max Quốc Tế
+                                                    Chính Hãng 1</p>
+                                            </div>
+                                            <div class="card__memory">
+                                                <ul class="row card__memory-content">
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="128" class="card__memory-item"><a
+                                                                class="memory-item active" href="#">128 GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="256" class="card__memory-item"><a
+                                                                class="memory-item" href="#">256
+                                                                GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="512" class="card__memory-item"><a
+                                                                class="memory-item" href="#">512
+                                                                GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="1024" class="card__memory-item"><a
+                                                                class="memory-item" href="#">1 TB
+                                                            </a></li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="card__color">
+                                                <ul class="row card__color-content">
+                                                    <div class="col-div col-3">
+                                                        <li data-color="blue" class="card__color-item">
+                                                            <a class="item" href="#">
+                                                                <img class="active" src="./img/Color_Blue.png"
+                                                                    alt="blue">
+                                                            </a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="silver" class="card__color-item">
+                                                            <a class="item" href="#"><img src="./img/Color_Silver.png"
+                                                                    alt="silver"></a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="gray" class="card__color-item">
+                                                            <a class="item" href="#"><img src="./img/Color_Gray.png"
+                                                                    alt="gray"></a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="gold" class="card__color-item"><a class="item"
+                                                                href="#"><img src="./img/Color_Gold.png" alt="gold"></a>
+                                                        </li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="card__price">
+                                                <span>10.000¥</span>
+                                            </div>
+                                            <div class="card__presents">
+                                                <p>Tặng mã giảm giá RTYH trị giá 1.000 ¥</p>
+                                                <p>Tặng ốp cường lực con voi</p>
+                                            </div>
+                                            <button class="btn w-100">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                    <div data-id="iphone12_2" class="card swiper-slide">
+                                        <img src="./img/ImgCard_IPhone12ProMax.png" class="card-img-top" alt="CardNo1">
+                                        <div class="card-body">
+                                            <div class="">
+                                                <p class="card-text">iPhone 12 Pro Max Quốc Tế
+                                                    Chính Hãng 1</p>
+                                            </div>
+                                            <div class="card__memory">
+                                                <ul class="row card__memory-content">
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="128" class="card__memory-item"><a
+                                                                class="memory-item active" href="#">128 GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="256" class="card__memory-item"><a
+                                                                class="memory-item" href="#">256
+                                                                GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="512" class="card__memory-item"><a
+                                                                class="memory-item" href="#">512
+                                                                GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="1024" class="card__memory-item"><a
+                                                                class="memory-item" href="#">1 TB
+                                                            </a></li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="card__color">
+                                                <ul class="row card__color-content">
+                                                    <div class="col-div col-3">
+                                                        <li data-color="blue" class="card__color-item">
+                                                            <a class="item" href="#">
+                                                                <img class="active" src="./img/Color_Blue.png"
+                                                                    alt="blue">
+                                                            </a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="silver" class="card__color-item">
+                                                            <a class="item" href="#"><img src="./img/Color_Silver.png"
+                                                                    alt="silver"></a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="gray" class="card__color-item">
+                                                            <a class="item" href="#"><img src="./img/Color_Gray.png"
+                                                                    alt="gray"></a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="gold" class="card__color-item"><a class="item"
+                                                                href="#"><img src="./img/Color_Gold.png" alt="gold"></a>
+                                                        </li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="card__price">
+                                                <span>10.000¥</span>
+                                            </div>
+                                            <div class="card__presents">
+                                                <p>Tặng mã giảm giá RTYH trị giá 1.000 ¥</p>
+                                                <p>Tặng ốp cường lực con voi</p>
+                                            </div>
+                                            <button class="btn w-100">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                    <div data-id="iphone12_3" class="card swiper-slide">
+                                        <img src="./img/ImgCard_IPhone12ProMax.png" class="card-img-top" alt="CardNo1">
+                                        <div class="card-body">
+                                            <div class="">
+                                                <p class="card-text">iPhone 12 Pro Max Quốc Tế
+                                                    Chính Hãng 1</p>
+                                            </div>
+                                            <div class="card__memory">
+                                                <ul class="row card__memory-content">
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="128" class="card__memory-item"><a
+                                                                class="memory-item active" href="#">128 GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="256" class="card__memory-item"><a
+                                                                class="memory-item" href="#">256
+                                                                GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="512" class="card__memory-item"><a
+                                                                class="memory-item" href="#">512
+                                                                GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="1024" class="card__memory-item"><a
+                                                                class="memory-item" href="#">1 TB
+                                                            </a></li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="card__color">
+                                                <ul class="row card__color-content">
+                                                    <div class="col-div col-3">
+                                                        <li data-color="blue" class="card__color-item">
+                                                            <a class="item" href="#">
+                                                                <img class="active" src="./img/Color_Blue.png"
+                                                                    alt="blue">
+                                                            </a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="silver" class="card__color-item">
+                                                            <a class="item" href="#"><img src="./img/Color_Silver.png"
+                                                                    alt="silver"></a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="gray" class="card__color-item">
+                                                            <a class="item" href="#"><img src="./img/Color_Gray.png"
+                                                                    alt="gray"></a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="gold" class="card__color-item"><a class="item"
+                                                                href="#"><img src="./img/Color_Gold.png" alt="gold"></a>
+                                                        </li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="card__price">
+                                                <span>10.000¥</span>
+                                            </div>
+                                            <div class="card__presents">
+                                                <p>Tặng mã giảm giá RTYH trị giá 1.000 ¥</p>
+                                                <p>Tặng ốp cường lực con voi</p>
+                                            </div>
+                                            <button class="btn w-100">Mua Ngay</button>
+                                        </div>
+                                    </div>
 
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <i class="fa fa-chevron-left"></i>
+                                </div>
+                                <div class="swiper-button-next">
+                                    <i class="fa fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="iphone11" role="tabpanel" aria-labelledby="iphone11">
+
+                        </div>
+                        <div class="tab-pane fade" id="iphoneX" role="tabpanel" aria-labelledby="iphoneX">
+
+                        </div>
+                        <div class="tab-pane fade" id="iphone8" role="tabpanel" aria-labelledby="iphone8">
+
+                        </div>
+                        <div class="tab-pane fade" id="iphone7" role="tabpanel" aria-labelledby="iphone7">
+
+                        </div>
+                        <div class="tab-pane fade" id="iphone6" role="tabpanel" aria-labelledby="iphone6">
+
+                        </div>
+                        <div class="tab-pane fade" id="oldIPhone" role="tabpanel" aria-labelledby="oldIPhone">
+
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
+        <!-- SELLING IPAD PRODUCTS -->
+        <section class="products ipad section">
+            <div class="products__content">
+                <div class="">
+                    <p class="products__title">IPad Bán Chạy Nhất</p>
+                    <ul class="nav nav-tabs list_ipad" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#ipad1" role="tab">IPad 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#ipad2" role="tab">IPad 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#ipad3" role="tab">IPad 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#ipad4" role="tab">IPad 4</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#ipad5" role="tab">IPad 5</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#ipad6" role="tab">IPad 6</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#ipad7" role="tab">IPad 7</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="ipad1" role="tabpanel" aria-labelledby="iphone12">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div data-id="ipad_1" class="card swiper-slide">
+                                        <img src="./img/ImgCard_IPhone12ProMax.png" class="card-img-top" alt="CardNo1">
+                                        <div class="card-body">
+                                            <div class="">
+                                                <p class="card-text">iPad 1 Chính Hãng</p>
+                                            </div>
+                                            <div class="card__memory">
+                                                <ul class="row card__memory-content">
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="128" class="card__memory-item"><a
+                                                                class="memory-item active" href="#">128 GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="256" class="card__memory-item"><a
+                                                                class="memory-item" href="#">256
+                                                                GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="512" class="card__memory-item"><a
+                                                                class="memory-item" href="#">512
+                                                                GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="1024" class="card__memory-item"><a
+                                                                class="memory-item" href="#">1 TB
+                                                            </a></li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="card__color">
+                                                <ul class="row card__color-content">
+                                                    <div class="col-div col-3">
+                                                        <li data-color="blue" class="card__color-item">
+                                                            <a class="item" href="#">
+                                                                <img class="active" src="./img/Color_Blue.png"
+                                                                    alt="blue">
+                                                            </a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="silver" class="card__color-item">
+                                                            <a class="item" href="#"><img src="./img/Color_Silver.png"
+                                                                    alt="silver"></a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="gray" class="card__color-item">
+                                                            <a class="item" href="#"><img src="./img/Color_Gray.png"
+                                                                    alt="gray"></a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="gold" class="card__color-item"><a class="item"
+                                                                href="#"><img src="./img/Color_Gold.png" alt="gold"></a>
+                                                        </li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="card__price">
+                                                <span>10.000¥</span>
+                                            </div>
+                                            <div class="card__presents">
+                                                <p>Tặng mã giảm giá RTYH trị giá 1.000 ¥</p>
+                                                <p>Tặng ốp cường lực con voi</p>
+                                            </div>
+                                            <button class="btn w-100">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                    <div data-id="ipad_2" class="card swiper-slide">
+                                        <img src="./img/ImgCard_IPhone12ProMax.png" class="card-img-top" alt="CardNo1">
+                                        <div class="card-body">
+                                            <div class="">
+                                                <p class="card-text">iPhone 12 Pro Max Quốc Tế
+                                                    Chính Hãng 1</p>
+                                            </div>
+                                            <div class="card__memory">
+                                                <ul class="row card__memory-content">
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="128" class="card__memory-item"><a
+                                                                class="memory-item active" href="#">128 GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="256" class="card__memory-item"><a
+                                                                class="memory-item" href="#">256
+                                                                GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="512" class="card__memory-item"><a
+                                                                class="memory-item" href="#">512
+                                                                GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="1024" class="card__memory-item"><a
+                                                                class="memory-item" href="#">1TB
+                                                                GB</a></li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="card__color">
+                                                <ul class="row card__color-content">
+                                                    <div class="col-div col-3">
+                                                        <li data-color="blue" class="card__color-item">
+                                                            <a class="item" href="#">
+                                                                <img class="active" src="./img/Color_Blue.png"
+                                                                    alt="blue">
+                                                            </a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="silver" class="card__color-item">
+                                                            <a class="item" href="#"><img src="./img/Color_Silver.png"
+                                                                    alt="silver"></a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="gray" class="card__color-item">
+                                                            <a class="item" href="#"><img src="./img/Color_Gray.png"
+                                                                    alt="gray"></a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="gold" class="card__color-item"><a class="item"
+                                                                href="#"><img src="./img/Color_Gold.png" alt="gold"></a>
+                                                        </li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="card__price">
+                                                <span>10.000¥</span>
+                                            </div>
+                                            <div class="card__presents">
+                                                <p>Tặng mã giảm giá RTYH trị giá 1.000 ¥</p>
+                                                <p>Tặng ốp cường lực con voi</p>
+                                            </div>
+                                            <button class="btn w-100">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                    <div data-id="ipad_3" class="card swiper-slide">
+                                        <img src="./img/ImgCard_IPhone12ProMax.png" class="card-img-top" alt="CardNo1">
+                                        <div class="card-body">
+                                            <div class="">
+                                                <p class="card-text">iPhone 12 Pro Max Quốc Tế
+                                                    Chính Hãng 1</p>
+                                            </div>
+                                            <div class="card__memory">
+                                                <ul class="row card__memory-content">
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="128" class="card__memory-item"><a
+                                                                class="memory-item active" href="#">128 GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="256" class="card__memory-item"><a
+                                                                class="memory-item" href="#">256
+                                                                GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="512" class="card__memory-item"><a
+                                                                class="memory-item" href="#">512
+                                                                GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4">
+                                                        <li data-capacity="1024" class="card__memory-item"><a
+                                                                class="memory-item" href="#">1TB
+                                                                GB</a></li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="card__color">
+                                                <ul class="row card__color-content">
+                                                    <div class="col-div col-3">
+                                                        <li data-color="blue" class="card__color-item">
+                                                            <a class="item" href="#">
+                                                                <img class="active" src="./img/Color_Blue.png"
+                                                                    alt="blue">
+                                                            </a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="silver" class="card__color-item">
+                                                            <a class="item" href="#"><img src="./img/Color_Silver.png"
+                                                                    alt="silver"></a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="gray" class="card__color-item">
+                                                            <a class="item" href="#"><img src="./img/Color_Gray.png"
+                                                                    alt="gray"></a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="gold" class="card__color-item"><a class="item"
+                                                                href="#"><img src="./img/Color_Gold.png" alt="gold"></a>
+                                                        </li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="card__price">
+                                                <span>10.000¥</span>
+                                            </div>
+                                            <div class="card__presents">
+                                                <p>Tặng mã giảm giá RTYH trị giá 1.000 ¥</p>
+                                                <p>Tặng ốp cường lực con voi</p>
+                                            </div>
+                                            <button class="btn w-100">Mua Ngay</button>
+                                        </div>
+                                    </div>
 
-        </div>
-    </footer>
-</div>
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <i class="fa fa-chevron-left"></i>
+                                </div>
+                                <div class="swiper-button-next">
+                                    <i class="fa fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="ipad2" role="tabpanel" aria-labelledby="iphone11">
 
-<!-- jquery  -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+                        </div>
+                        <div class="tab-pane fade" id="ipad3" role="tabpanel" aria-labelledby="iphoneX">
 
-<!-- popper -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                        </div>
+                        <div class="tab-pane fade" id="ipad4" role="tabpanel" aria-labelledby="iphone8">
+
+                        </div>
+                        <div class="tab-pane fade" id="ipad5" role="tabpanel" aria-labelledby="iphone7">
+
+                        </div>
+                        <div class="tab-pane fade" id="ipad6" role="tabpanel" aria-labelledby="iphone6">
+
+                        </div>
+                        <div class="tab-pane fade" id="ipad7" role="tabpanel" aria-labelledby="oldIPhone">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER  -->
+        <footer>
+            <div class="footer__content section">
+                <div class="main-content content1">
+                    <div class="row">
+                        <div class="col-7 footer__item">
+                            <h6>Thông Tin Công Ty</h6>
+                            <div class="underLine"></div>
+                            <p>Giới thiệu</p>
+                            <p>Hướng dẫn mua hàng</p>
+                            <p>Thẻ ngân hàng</p>
+                        </div>
+                        <div class="col-5 footer__item">
+                            <h6>Chính Sách</h6>
+                            <div class="underLine"></div>
+                            <p>Chính sách bảo hành</p>
+                            <p>Chính sách hoạt động</p>
+                            <p>Bảo hành tại Nhật Bản</p>
+                            <p>Bảo hành tại Việt Nam</p>
+                        </div>
+                        <div class="col-7 footer__item">
+                            <h6>Liên Hệ</h6>
+                            <div class="underLine"></div>
+                            <p>HotLine : 0809.346.6789</p>
+                            <p>Email : hoanghai1710021@gmail.com</p>
+                        </div>
+                        <div class="col-5 footer__item">
+                            <h6>Các Chi Nhánh</h6>
+                            <div class="underLine"></div>
+                            <p>Chi nhánh Otsuka Tokyo</p>
+                            <p>Chi nhánh Osu Nagoya</p>
+                            <p>Chi nhánh Việt Nam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content content2">
+                    <div class="row content2">
+                        <div class="col-4 footer__item">
+                            <h6>Thông Tin Công Ty</h6>
+                            <div class="underLine"></div>
+                            <p>Giới thiệu</p>
+                            <p>Hướng dẫn mua hàng</p>
+                            <p>Thẻ ngân hàng</p>
+                        </div>
+                        <div class="col-4 footer__item">
+                            <h6>Chính Sách</h6>
+                            <div class="underLine"></div>
+                            <p>Chính sách bảo hành</p>
+                            <p>Chính sách hoạt động</p>
+                            <p>Bảo hành tại Nhật Bản</p>
+                            <p>Bảo hành tại Việt Nam</p>
+                        </div>
+                        <div class="col-4 footer__item">
+                            <h6>Các Chi Nhánh</h6>
+                            <div class="underLine"></div>
+                            <p>Chi nhánh Otsuka Tokyo</p>
+                            <p>Chi nhánh Osu Nagoya</p>
+                            <p>Chi nhánh Việt Nam</p>
+                        </div>
+                        <div class="col-12 footer__item">
+                            <h6>Liên Hệ</h6>
+                            <div class="underLine"></div>
+                            <p>HotLine : 0809.346.6789</p>
+                            <p>Email : hoanghai1710021@gmail.com</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- popper -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-</script>
+        </script>
 
-<!-- BS4 -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    <!-- BS4 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
-</script>
+        </script>
 
-<!-- OWL JS     -->
-<script src="./js/owl.carousel.min.js"></script>
-<script src="./js/Owl_Carousel.js"></script>
+    <!-- OWL JS     -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/Owl_Carousel.js"></script>
 
-<!-- SWIPER JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="./js/Swiper_carousel.js"></script>
+    <!-- SWIPER JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/Swiper_carousel.js"></script>
 
-<!-- MENU JS -->
-<script src="./js/menu.js"></script>
+    <!-- MENU JS -->
+    <script src="./js/menu.js"></script>
 
-<!-- ACTIVE CLASS JS -->
-<script src="./js/CreateActiveMenu.js"></script>
+    <!-- ACTIVE CLASS JS -->
+    <script src="./js/CreateActiveMenu.js"></script>
 
-<!-- MAIN JS -->
-<script src="./js/main.js"></script>
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
