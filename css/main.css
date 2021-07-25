@@ -217,6 +217,18 @@ header .navbar .navbar-collapse .navbar-nav .nav-link p {
   font-weight: 600;
 }
 
+header#hederStandard .headertop .row {
+  margin: 0;
+}
+
+header#hederStandard .headertop .row div:first-child {
+  padding-left: 0;
+}
+
+header#hederStandard .headertop .row div:last-child {
+  padding-right: 0;
+}
+
 header#headerFixed {
   position: fixed;
   top: 0;
