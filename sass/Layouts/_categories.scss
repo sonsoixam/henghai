@@ -1,0 +1,78 @@
+.categories {
+    .categories__content {
+        .row {
+            margin: 0;
+            .col-3 {                
+                line-height: 15px;
+                margin-bottom: $mg-3 - 4;
+                .categories__item {
+                    position: relative;
+                    background-color: $color-white-1;
+                    width: 62px;
+                    height: 62px;
+                    line-height: 62px;
+                    border-radius: 50%;
+                    text-align: center;
+                    margin-bottom: 0;
+                    a{
+                        display: block;
+                        height: 100%;
+                    }
+                    .categories__title{
+                        position: absolute;
+                        font-size: $fs-2;
+                        top:38px;
+                        left:50%;
+                        transform: translateX(-50%);
+                        font-weight: $fw-1;
+                        white-space: nowrap;
+                    }
+                }                
+            }
+        }
+    }
+}
+@media screen and (min-width: 520px){
+    .categories {
+        .categories__content {
+            .row {
+               
+                .col-3 {                
+                    flex-basis: 20%;
+                    max-width: 20%;
+                    .categories__item {
+                       
+                        a{
+                            
+                        }
+                        .categories__title{
+                            
+                        }
+                    }                
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 650px){
+    .categories {
+        .categories__content {
+            .row {
+               
+                .col-3 {                
+                    flex-basis: 16.66%;
+                    max-width: 16.66%;
+                    .categories__item {
+                       
+                        a{
+                            
+                        }
+                        .categories__title{
+                            
+                        }
+                    }                
+                }
+            }
+        }
+    }
+}

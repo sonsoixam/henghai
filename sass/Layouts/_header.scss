@@ -1,0 +1,292 @@
+header {
+    background-color: $color-red-0;
+    width: 100%;
+    .headertop {
+        padding: $pd-2 - 4 $pd-1 + 2 $pd-2 - 4 $pd-1 + 2;        
+        .navbar-toggler {
+            text-align: left;
+            display: inline-block;
+            padding: 0;
+            cursor: pointer;
+            span {
+                font-size: 33px;
+                width: 100%;
+                height: 100%;
+                color: $color-white-0;
+                & i:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+        .header__logo {
+            margin: 0;
+            text-align: center;
+        }
+        .messenger {
+            font-size: 24px;
+            color: $color-white-0;
+            text-align: right;
+            a {
+                color: $color-white-0;
+                font-size: $fs-6;
+            }
+        }
+    }
+    .header__search {
+        position: relative;
+        padding: 0 $pd-1 + 2 $pd-1 - 1 $pd-1 + 2;
+        box-shadow: 0 3px 1px 0 rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+        input {
+            height: $hg-2;
+            font-size: $fs-2 + 1;
+            font-weight: $fw-0;
+            border-right: none;
+            &:focus {
+                box-shadow: none;
+                outline: none;
+            }
+            &::placeholder {
+                color: $color-gray-4;
+                font-size: $fs-2 + 2;
+                font-weight: $fw-0;
+            }
+        }
+        .input-group-append{
+            height: $hg-2;
+            span {
+                cursor: pointer;
+                background-color: $color-white-0;
+                border-left: none;
+                color: $color-gray-4;
+            }
+        }
+        
+        .header__search-list {
+            display: block;
+            position: absolute;
+            top: 39px;
+            right: 13px;
+            left: 12px;          
+            z-index: 20;
+            background-color: $color-white-0;
+            border: 1px solid #ced4da91;
+            max-height: 60vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            .product-item-shortcut {
+                border-bottom: 1px solid #ced4da91;
+                a {
+                    padding: $pd-1;
+                    margin: 0;
+                    img {
+                        width: $whpx-3 - 5;
+                    }
+                    .product-item-shortcut__title {
+                        font-size: $fs-3 - 1;
+                        color: $color-black-0;
+                    }
+                    .product-item-shortcut__price {
+                        .price__original {
+                            font-size: $fs-3;
+                            color: $color-red-1;
+                            font-weight: $fw-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .navbar {
+        z-index: 16;
+        width: 100%;
+        padding: 0;
+        box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+        .navbar-collapse {
+            transition: none;
+            .navbar-nav {
+                flex-direction: row;
+                margin: 0 $mg-1 - 2;
+                align-items: center;
+                .nav-link {
+                    text-align: center;
+                    p {
+                        text-align: center;
+                        white-space: nowrap;
+                        margin-bottom: 0;
+                        @include styleText($color-black-0, $fs-2, $fw-1);
+                    }
+                }
+            }
+        }
+    }
+}
+// =============================
+header#hederStandard {
+    .headertop{
+        .row{
+            margin: 0;
+            & div:first-child{
+                padding-left: 0;
+            }
+            & div:last-child{
+                padding-right: 0;
+            }
+        }
+    }
+}
+// =============================
+header#headerFixed {
+    position: fixed;
+    top: 0;
+    transform: translate(0, -100%);
+    z-index: 16;
+    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+    .headertop {
+        .row {
+            margin: 0;
+            .headertop__item {
+                padding: 0;
+
+                img {
+                    width: $whpx-3 - 10;
+                    height: $hg-2;
+                    &.logoStandard {
+                        display: none;
+                    }
+                }
+            }
+            .header__search {
+                padding: 0;
+                box-shadow: none;
+                .searchFixed-list.header__search-list{
+                    right: 0;
+                    left: 0;
+                    .product-item-shortcut{
+                        a {
+                            padding: 3px;
+                            align-items: center;
+                            .product-item-shortcut__thumb{
+                                padding: 0;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Responsive
+// Header
+@media screen and (max-width: 345px) {
+    header#hederStandard{
+        .header__search {      
+            .header__search-list {              
+                .product-item-shortcut {                    
+                    a {
+                        .product-item-shortcut__content{
+                            padding-left: 20px;
+                        }                        
+                    }
+                }
+            }
+        }
+    }
+    
+}
+// HeaderFixed
+@media screen and (max-width: 345px) {
+    header#headerFixed {
+        .headertop {
+            padding: 8px;
+        }
+        
+    }
+}
+@media screen and (max-width: 426px) {
+    header#headerFixed {
+        .headertop {
+            .row {
+                margin: 0;
+                .headertop__item {
+                    padding: 0;
+                    img {
+                        width: $whpx-2 + 10;
+                        height: auto;
+                    }
+                    .menu-icon {
+                        font-size: $fs-5 + 4;
+                    }
+                    .messenger {
+                        a {
+                            font-size: $fs-5 + 1;
+                        }
+                    }
+                }
+                .header__search {
+                    padding: 0;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 426px) {
+    header#headerFixed {
+        .headertop {
+            .row {
+                .headertop__item {
+                    img {
+                        width: $whpx-3 - 8;
+                        height: auto;
+                    }
+                    .menu-icon {
+                    }
+                    .messenger {
+                        a {
+                        }
+                    }
+                }
+                .header__search {
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 600px) {
+    header#headerFixed {
+        .headertop {
+            .row {
+                .headertop__item {
+                    &.logoFixed {
+                        flex-basis: 25%;
+                        max-width: 25%;
+                    }
+                    &.header__search {
+                        flex-basis: 50%;
+                        max-width: 50%;
+                    }
+                    img {
+                        &.logoFixed {
+                            display: none;
+                        }
+                        &.logoStandard {
+                            display: inline-block;
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    .menu-icon {
+                    }
+                    .messenger {
+                        a {
+                        }
+                    }
+                }
+                .header__search {
+                }
+            }
+        }
+    }
+}

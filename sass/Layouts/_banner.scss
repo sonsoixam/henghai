@@ -1,0 +1,76 @@
+.banner {
+    margin: $mg-2 - 2 $mg-1 - 2;
+    .banner__carousel {        
+        .owl-dots {
+            margin-top: 5px !important;
+            line-height: 0;
+            .owl-dot {
+                &.active{
+                    span{
+                        background-color: $color-red-0;
+                    }                    
+                }
+                span {
+                    width: 50px;
+                    height: 4px;
+                    margin: 0 $mg-0 + 2;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+    .banner {
+ 
+        .banner__carousel {        
+            .owl-dots {               
+                .owl-dot {                   
+                    span {
+                        width: 45px;                        
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 370px){
+    .banner { 
+        .banner__carousel {        
+            .owl-dots {               
+                .owl-dot {                   
+                    span {
+                        width: 40px;                        
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 340px){
+    .banner { 
+        .banner__carousel {        
+            .owl-dots {               
+                .owl-dot {                   
+                    span {
+                        width: 35px;                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px){
+    .banner { 
+        .banner__carousel {        
+            .owl-dots {               
+                .owl-dot {                   
+                    span {
+                        width: 65px;                        
+                    }
+                }
+            }
+        }
+    }
+}
