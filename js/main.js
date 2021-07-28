@@ -29,14 +29,29 @@ $('.card__color-item').on('click', function (e) {
 $('#search').on('keyup', function (e) {
     var keyword = $(this).val();
     if (keyword) {
-        $.ajax({
-
-        })
+        $.ajax({})
         var html = ``; // dữ liệu trả về từ backend qua ajax
         $('.searchStandard-list.header__search-list').show();
     } else {
         $('.searchStandard-list.header__search-list').hide();
     }
+})
+$('#search').on('focusout', function (e) {
+    $('.searchStandard-list.header__search-list').hide();
+})
+
+$('#search2').on('keyup', function (e) {
+    var keyword = $(this).val();
+    if (keyword) {
+        $.ajax({})
+        var html = ``; // dữ liệu trả về từ backend qua ajax
+        $('.searchFixed-list.header__search-list').show();
+    } else {
+        $('.searchFixed-list.header__search-list').hide();
+    }
+})
+$('#search2').on('focusout', function (e) {
+    $('.searchFixed-list.header__search-list').hide();
 })
 
 // lấy data-subcategory
