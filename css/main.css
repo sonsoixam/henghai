@@ -124,12 +124,13 @@ header .header__search input {
   height: 40px;
   font-size: 13px;
   font-weight: normal;
-  border-right: none;
+  border: none;
 }
 
-header .header__search input:focus {
+header .header__search input.form-control:focus {
   box-shadow: none;
   outline: none;
+  border: none;
 }
 
 header .header__search input::placeholder {
@@ -145,7 +146,7 @@ header .header__search .input-group-append {
 header .header__search .input-group-append span {
   cursor: pointer;
   background-color: #ffffff;
-  border-left: none;
+  border: none;
   color: #b8b2b2;
 }
 

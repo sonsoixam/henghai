@@ -36,9 +36,10 @@ $('#search').on('keyup', function (e) {
         $('.searchStandard-list.header__search-list').hide();
     }
 })
-$('#search').on('focusout', function (e) {
-    $('.searchStandard-list.header__search-list').hide();
-})
+// $(".header__search").on('focusout', function (e) {
+//     console.log('clicked ra ngoài');
+//     // $('.searchStandard-list.header__search-list').hide();
+// })
 
 $('#search2').on('keyup', function (e) {
     var keyword = $(this).val();
@@ -50,9 +51,7 @@ $('#search2').on('keyup', function (e) {
         $('.searchFixed-list.header__search-list').hide();
     }
 })
-$('#search2').on('focusout', function (e) {
-    $('.searchFixed-list.header__search-list').hide();
-})
+
 
 // lấy data-subcategory
 var listNavLink = document.querySelectorAll('.nav-link');
@@ -62,7 +61,34 @@ for (var item of listNavLink) {
     });
 }
 
+// ẩn hiện search list standard
+var searchStandardFocusOut;
+$('.header__search .searchStandard-list').click(function()
+{
+    clearTimeout(searchStandardFocusOut);                  
+});
 
+$('.header__search').focusout(function()
+{
+    searchStandardFocusOut = setTimeout(function() {$('.header__search .searchStandard-list').hide()}, 150);
+});
 
+$('.header__search').attr('tabIndex', -1);
+$('.header__search .searchStandard-list').hide();
 
+// ẩn hiện search list fixed
+
+var searchFixeddFocusOut;
+$('.header__searchFixed .searchFixed-list').click(function()
+{
+    clearTimeout(searchFixeddFocusOut);                  
+});
+
+$('.header__searchFixed').focusout(function()
+{
+    searchFixeddFocusOut = setTimeout(function() {$('.header__searchFixed .searchFixed-list').hide()}, 150);
+});
+
+$('.header__searchFixed').attr('tabIndex', -1);
+$('.header__searchFixed .searchFixed-list').hide();
 
