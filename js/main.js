@@ -1,3 +1,4 @@
+// =======================================================================
 //Xử lí sự kiện khi click vào dung lượng
 $('.card__memory-item').on('click', function (e) {
     e.preventDefault();
@@ -8,8 +9,6 @@ $('.card__memory-item').on('click', function (e) {
     var product_id = this.closest('.card.swiper-slide').getAttribute('data-id');
     console.log(product_id);
 })
-
-
 //Xử lí sự kiện khi click vào màu
 $('.card__color-item').on('click', function (e) {
     e.preventDefault();
@@ -24,9 +23,10 @@ $('.card__color-item').on('click', function (e) {
     var product_id = this.closest('.card.swiper-slide').getAttribute('data-id');
     console.log(product_id);
 })
-
-//Search auto suggest
-$('#search').on('keyup', function (e) {
+// =======================================================================
+// =======================================================================
+//SEARCH MENU PC VERSION
+$('#search1').on('keyup', function (e) {
     var keyword = $(this).val();
     if (keyword) {
         $.ajax({})
@@ -36,12 +36,19 @@ $('#search').on('keyup', function (e) {
         $('.searchStandard-list.header__search-list').hide();
     }
 })
-// $(".header__search").on('focusout', function (e) {
-//     console.log('clicked ra ngoài');
-//     // $('.searchStandard-list.header__search-list').hide();
-// })
-
+//SEARCH MENU MOBILE VERSION
 $('#search2').on('keyup', function (e) {
+    var keyword = $(this).val();
+    if (keyword) {
+        $.ajax({})
+        var html = ``; // dữ liệu trả về từ backend qua ajax
+        $('.searchStandard-list.header__search-list').show();
+    } else {
+        $('.searchStandard-list.header__search-list').hide();
+    }
+})
+//SEARCH MENUFIXED MOBILE VERSION
+$('#search3').on('keyup', function (e) {
     var keyword = $(this).val();
     if (keyword) {
         $.ajax({})
@@ -51,17 +58,19 @@ $('#search2').on('keyup', function (e) {
         $('.searchFixed-list.header__search-list').hide();
     }
 })
-
-
-// lấy data-subcategory
+// =======================================================================
+// =======================================================================
+// LẤY DATA-SUBCATEGORIES
 var listNavLink = document.querySelectorAll('.nav-link');
 for (var item of listNavLink) {
     item.addEventListener("click", function (e) {
         console.log(e.target.getAttribute("data-subcategory"));
     });
 }
-
-// ẩn hiện search list standard
+// =======================================================================
+// =======================================================================
+// ẨN HIỆN LIST SEARCH
+//SEARCH LIST MENUSTANDARD MOBLIE
 var searchStandardFocusOut;
 $('.header__search .searchStandard-list').click(function()
 {
@@ -75,9 +84,7 @@ $('.header__search').focusout(function()
 
 $('.header__search').attr('tabIndex', -1);
 $('.header__search .searchStandard-list').hide();
-
-// ẩn hiện search list fixed
-
+//SEARCH LIST MENUFIXED MOBLIE
 var searchFixeddFocusOut;
 $('.header__searchFixed .searchFixed-list').click(function()
 {
@@ -92,3 +99,23 @@ $('.header__searchFixed').focusout(function()
 $('.header__searchFixed').attr('tabIndex', -1);
 $('.header__searchFixed .searchFixed-list').hide();
 
+//SEARCH LIST MENUSTANDARD PC
+var searchStandardFocusOut_PC;
+$('.header__middle-search .searchStandard-list').click(function()
+{
+    clearTimeout(searchStandardFocusOut_PC);                  
+});
+
+$('.header__middle-search').focusout(function()
+{
+    searchStandardFocusOut_PC = setTimeout(function() {$('.header__middle-search .searchStandard-list').hide()}, 150);
+});
+$('.header__middle-search').attr('tabIndex', -1);
+$('.header__search .searchStandard-list_PC').hide();
+// =======================================================================
+// =======================================================================
+// MODAL
+$(window).on('load', function() {
+    $('#popupNewsletter').modal('show');
+});
+// =======================================================================

@@ -31,9 +31,9 @@
 
 <body>
     <!-- HEADER -->
-    <header id="hederStandard">
-        <div class="headertop">
-            <div class="row align-items-center">
+    <header id="headerStandard">
+        <div class="headertop header__top">            
+            <div class="row align-items-center d-md-none">
                 <div class="col-2">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,19 +52,19 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <form class="header__search">
+        </div>        
+        <form class="header__search d-md-none">
             <div class="input-group">
-                <input id="search" type="text" class="form-control input-searchStandard" placeholder="Bạn cần tìm gì">
+                <input id="search2" type="text" class="form-control input-searchStandard" placeholder="Bạn cần tìm gì">
                 <div class="input-group-append">
                     <span class="input-group-text button-searchStandar" id="basic-addon2">
                         <i class="fa fa-search"></i>
                     </span>
                 </div>
             </div>
-            <div class="searchStandard-list header__search-list" style="display:none">
+            <div class="searchStandard-list_mobile searchStandard-list header__search-list" style="display:none">
                 <div class="product-item-shortcut">
-                    <a class="row"  title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
+                    <a class="row" title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
                         <div class="col-2 product-item-shortcut__thumb">
                             <img class="" src="./img/Color_Blue.png" alt="">
                         </div>
@@ -81,7 +81,7 @@
                     </a>
                 </div>
                 <div class="product-item-shortcut">
-                    <a class="row"  title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
+                    <a class="row" title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
                         <div class="col-2 product-item-shortcut__thumb">
                             <img class="" src="./img/Color_Blue.png" alt="">
                         </div>
@@ -98,7 +98,7 @@
                     </a>
                 </div>
                 <div class="product-item-shortcut">
-                    <a class="row"  title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
+                    <a class="row" title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
                         <div class="col-2 product-item-shortcut__thumb">
                             <img class="" src="./img/Color_Blue.png" alt="">
                         </div>
@@ -115,7 +115,7 @@
                     </a>
                 </div>
                 <div class="product-item-shortcut">
-                    <a class="row"  title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
+                    <a class="row" title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
                         <div class="col-2 product-item-shortcut__thumb">
                             <img class="" src="./img/Color_Blue.png" alt="">
                         </div>
@@ -132,7 +132,7 @@
                     </a>
                 </div>
                 <div class="product-item-shortcut">
-                    <a class="row"  title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
+                    <a class="row" title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
                         <div class="col-2 product-item-shortcut__thumb">
                             <img class="" src="./img/Color_Blue.png" alt="">
                         </div>
@@ -151,7 +151,7 @@
             </div>
 
         </form>
-        <nav class="navbar navbar-light bg-light">
+        <nav class="navbar navbar-light bg-light d-md-none">
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav row">
                     <div class="col-3">
@@ -215,7 +215,7 @@
         </nav>
     </header>
     <header id="headerFixed" class="d-block">
-        <div class="headertop">
+        <div class="headertop d-md-none">
             <div class="row align-items-center justify-content-between">
                 <div class="col-2 headertop__item logoFixed">
                     <p class="mb-0  text-center">
@@ -228,7 +228,8 @@
                 </div>
                 <form class="col-7 header__search headertop__item header__searchFixed">
                     <div class="input-group">
-                        <input id="search2" type="text" class="form-control input-searchFixed" placeholder="Bạn cần tìm gì">
+                        <input id="search3" type="text" class="form-control input-searchFixed"
+                            placeholder="Bạn cần tìm gì">
                         <div class="input-group-append">
                             <span class="input-group-text button-searchFixed" id="basic-addon2">
                                 <i class="fa fa-search"></i>
@@ -336,7 +337,7 @@
 
             </div>
         </div>
-        <nav class="navbar navbar-light bg-light">
+        <nav class="navbar navbar-light bg-light d-md-none">
             <div class="collapse navbar-collapse" id="navbarNavFixed">
                 <ul class="navbar-nav row">
                     <div class="col-3">
@@ -399,10 +400,1350 @@
             </div>
         </nav>
     </header>
+    <header id="headerStandard_PC" class="header_PC">
+        <div class="headertop header__top responsive">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="header__top-left">
+                    <div class="header__top-left__content">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h1 class="header__top-leftSlogan">
+                                HOÀNG HẢI COMPANY
+                            </h1>
+                            <nav>
+                                <ul class="d-flex align-items-center m-0">
+                                    <li><a href="#" class="d-block">
+                                            <img src="./img/icon-red.png" alt="redIcon">
+                                            Hoàng Hải Mobile
+                                        </a></li>
+                                    <li><a href="#" class="d-block">
+                                            <img src="./img/icon-green.png" alt="redIcon">
+                                            Hoàng Hải Connect
+                                        </a></li>
+                                    <li> <a href="#" class="d-block">
+                                            <img src="./img/icon-iSchool.png" alt="redIcon">
+                                            Hoàng Hải Computer
+                                        </a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_top-right">
+                    <div class="header_top-right__content d-flex justify-content-end align-items-center">
+                        <a href="tel:0359809826"><i class="fas fa-phone-alt"></i>0359809826</a>
+                        <a href="tel:07036002501"><i class="fas fa-phone-alt"></i>07036002501</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="responsive header__middle">
+            <div class="header__middle-content container d-flex justify-content-between align-items-center">
+                <div class="header__middle-logo">
+                    <a href="#">
+                        <img class="img-fluid" src="./img/logoPC.png" alt="">
+                    </a>
+                </div>
+                <form class="header__middle-search">
+                    <div class="input-group d-flex">
+                        <input id="search1" class="form-control" type="" placeholder="Bạn muốn mua gì ?"
+                            aria-label="Search">
+                        <button class="btn" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                    <div class="searchStandard-list_PC searchStandard-list header__search-list" style="display:none">
+                        <div class="product-item-shortcut">
+                            <a class="row" title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
+                                <div class="col-2 product-item-shortcut__thumb">
+                                    <img class="" src="./img/Color_Blue.png" alt="">
+                                </div>
+                                <div class="col-10 product-item-shortcut__content">
+                                    <h3 class="product-item-shortcut__title">
+                                        iPhone 12 Pro Max Quốc Tế Chính Hãng
+                                    </h3>
+                                    <div class="product-item-shortcut__price">
+
+                                        <span class="price__original">124.800 ¥</span>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product-item-shortcut">
+                            <a class="row" title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
+                                <div class="col-2 product-item-shortcut__thumb">
+                                    <img class="" src="./img/Color_Blue.png" alt="">
+                                </div>
+                                <div class="col-10 product-item-shortcut__content">
+                                    <h3 class="product-item-shortcut__title">
+                                        iPhone 12 Pro Quốc Tế Chính Hãng
+                                    </h3>
+                                    <div class="product-item-shortcut__price">
+
+                                        <span class="price__original">152.000 ¥</span>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product-item-shortcut">
+                            <a class="row" title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
+                                <div class="col-2 product-item-shortcut__thumb">
+                                    <img class="" src="./img/Color_Blue.png" alt="">
+                                </div>
+                                <div class="col-10 product-item-shortcut__content">
+                                    <h3 class="product-item-shortcut__title">
+                                        iPhone 12 Pro Quốc Tế Chính Hãng
+                                    </h3>
+                                    <div class="product-item-shortcut__price">
+
+                                        <span class="price__original">152.000 ¥</span>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product-item-shortcut">
+                            <a class="row" title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
+                                <div class="col-2 product-item-shortcut__thumb">
+                                    <img class="" src="./img/Color_Blue.png" alt="">
+                                </div>
+                                <div class="col-10 product-item-shortcut__content">
+                                    <h3 class="product-item-shortcut__title">
+                                        iPhone 11 Pro Max Quốc Tế Chính Hãng
+                                    </h3>
+                                    <div class="product-item-shortcut__price">
+
+                                        <span class="price__original">152.000 ¥</span>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product-item-shortcut">
+                            <a class="row" title="iPhone 12 Pro Max Quốc Tế Chính Hãng">
+                                <div class="col-2 product-item-shortcut__thumb">
+                                    <img class="" src="./img/Color_Blue.png" alt="">
+                                </div>
+                                <div class="col-10 product-item-shortcut__content">
+                                    <h3 class="product-item-shortcut__title">
+                                        iPhone 11 Pro Quốc Tế Chính Hãng
+                                    </h3>
+                                    <div class="product-item-shortcut__price">
+
+                                        <span class="price__original">152.000 ¥</span>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+                <div class="header__middle-service">
+                    <ul class="header__middle-service_list d-none d-xl-flex">
+                        <li class="service col-4">
+                            <div class="service__box">
+                                <img class="service__icon" src="./img/bao-hanh.png" alt="">
+                                <div class="service__title">
+                                    <h4>Bảo Hành</h4>
+                                    <span>Bảo hành 13 tháng</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="service col-4">
+                            <div class="service__box">
+                                <img class="service__icon" src="./img/money.png" alt="">
+                                <div class="service__title">
+                                    <h4>CAM KẾT</h4>
+                                    <span>tặng 100.000¥ nếu phát hiện hàng fake</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="service col-4 border-0 pr-0">
+                            <div class="service__box">
+                                <img class="service__icon" src="./img/delivery-truck.png" alt="">
+                                <div class="service__title">
+                                    <h4>HoàngHảiMobile</h4>
+                                    <span> Otsuka Tokyo</span><br>
+                                    <span> Osu Nagoya Aichi</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="header__middle-service-button d-xl-none">
+                        <i class="fa fa-users-cog"></i>
+                        <ul id="header__middle-service_list" class="header__middle-service_list align-items-center">
+                            <li class="service col-4">
+                                <div class="service__box">
+                                    <img class="service__icon" src="./img/bao-hanh.png" alt="">
+                                    <div class="service__title">
+                                        <h4>Bảo Hành</h4>
+                                        <span>Bảo hành 13 tháng</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="service col-4">
+                                <div class="service__box">
+                                    <img class="service__icon" src="./img/money.png" alt="">
+                                    <div class="service__title">
+                                        <h4>CAM KẾT</h4>
+                                        <span>tặng 100.000¥ nếu phát hiện hàng fake</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="service col-4 border-0">
+                                <div class="service__box">
+                                    <img class="service__icon" src="./img/delivery-truck.png" alt="">
+                                    <div class="service__title">
+                                        <h4>HoàngHảiMobile</h4>
+                                        <span> Otsuka Tokyo</span><br>
+                                        <span> Osu Nagoya Aichi</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="responsive header-bottom container-lg d-flex justify-content-between align-items-center">
+            <nav class="nav-categories">
+                <div class="">
+                    <ul>
+                        <li class="home active">
+                            <a href="#">
+                                <i class="fa fa-home"></i>
+                            </a>
+                        </li>
+                        <li class="has-child">
+                            <a href="https://hoanghaimobile.jp/chuyen-muc/iphone">iPhone</a>
+                            <ul>
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/iphone-12-12-mini-12-pro-12-pro-max">iPhone
+                                        12 - 12 Mini - 12 Pro - 12 Pro Max
+                                        <span class="status">New</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-12">iPhone 12</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-12-mini">iPhone 12 Mini</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-12-pro">iPhone 12 Pro</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-12-pro-max">iPhone 12 Pro
+                                                Max</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/iphone-se-2020">iPhone SE
+                                        2020</a>
+                                    <ul>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/iphone-11-11-pro-11-pro-max">iPhone
+                                        11 - 11 Pro - 11 Pro Max</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-11">iPhone 11</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-11-pro">iPhone 11 Pro</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-11-pro-max">iPhone 11 Pro
+                                                Max</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/iphone-xs-xs-max">iPhone Xs - Xs
+                                        Max</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-xs">iPhone Xs</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-xs-max">iPhone Xs Max</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/iphone-xr-x">iPhone
+                                        Xr - X</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-xr">iPhone Xr</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-x">iPhone X</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/iphone-8-8-plus">iPhone 8 - 8
+                                        Plus</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-8">iPhone 8</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-8-plus">iPhone 8 Plus</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/iphone-7-7-plus">iPhone 7 - 7
+                                        Plus</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-7">iPhone 7</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-7-plus">iPhone 7 Plus</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/iphone-6s-6s-plus">iPhone 6s - 6s
+                                        Plus</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-6s">iPhone 6S</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-6s-plus">iPhone 6S Plus</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-child"><a href="https://hoanghaimobile.jp/chuyen-muc/ipad">iPad</a>
+                            <ul>
+                                <li class="has-child">
+                                    <a href="https://hoanghaimobile.jp/chuyen-muc-con/ipad-pro">iPad
+                                        Pro
+                                        <span class="status">New</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-pro-5-2021">iPad Pro 5
+                                                2021</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-pro-4-2020">iPad Pro 4
+                                                2020</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-pro-3-2018">iPad Pro 3
+                                                2018</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-pro-2-2017">iPad Pro 2
+                                                2017</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-pro-97in-2016">iPad Pro 9.7in
+                                                2016</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-pro-1-2015">iPad Pro 1
+                                                2015</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="has-child"><a href="https://hoanghaimobile.jp/chuyen-muc-con/ipad-air">iPad
+                                        Air</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-air-4-109in-2020">iPad Air 4
+                                                10.9in 2020</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-air-3-105in-2019">iPad Air 3
+                                                10.5in 2019</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-air-2-97in-2014">iPad Air 2
+                                                9.7in
+                                                2014</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-air-1-97in-2013">iPad Air 1
+                                                9.7in
+                                                2013</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="has-child"><a href="https://hoanghaimobile.jp/chuyen-muc-con/ipad-mini">iPad
+                                        Mini</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-mini-5-2019">iPad Mini 5
+                                                2019</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-mini-4-2015">iPad Mini 4
+                                                2015</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-mini-3-2014">iPad Mini 3
+                                                2014</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="has-child"><a href="https://hoanghaimobile.jp/chuyen-muc-con/ipad">iPad</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-102in-2020">iPad 10.2in
+                                                2020</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-7-102in-2019">iPad 7 10.2in
+                                                2019</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-6-97in-2018">iPad 6 9.7in
+                                                2018</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-5-97in-2017">iPad 5 9.7in
+                                                2017</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-child"><a href="https://hoanghaimobile.jp/chuyen-muc/airpods">AirPods</a>
+                            <ul>
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/airpods-max">Airpods
+                                        Max
+                                        <span class="status">New</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/airpods-max">Airpods Max</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/airpods-pro">AirPods
+                                        Pro</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/airpods-pro">Airpods Pro</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/airpods-2">AirPods
+                                        2</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/airpods-2-sac-thuong">AirPods 2 sạc
+                                                thường</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/airpods-2-sac-khong-day">AirPods 2
+                                                sạc
+                                                không dây</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="has-child"><a href="https://hoanghaimobile.jp/chuyen-muc/apple-watch">Apple Watch</a>
+                            <ul>
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/apple-watch-se">Apple Watch SE
+                                        <span class="status">New</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/apple-watch-se-40mm">Apple Watch SE
+                                                40mm</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/apple-watch-se-44mm">Apple Watch SE
+                                                44mm</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/apple-watch-series-6">Apple Watch
+                                        Series 6</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/apple-watch-series-6-40mm">Apple
+                                                Watch
+                                                Series 6 40mm</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/apple-watch-series-6-44mm">Apple
+                                                Watch
+                                                Series 6 44mm</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/apple-watch-series-5">Apple Watch
+                                        Series 5</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/apple-watch-series-5-40mm">Apple
+                                                Watch
+                                                Series 5 40mm</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/apple-watch-series-5-44mm">Apple
+                                                Watch
+                                                Series 5 44mm</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/apple-watch-series-4">Apple Watch
+                                        Series 4</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/apple-watch-series-4-40mm">Apple
+                                                Watch
+                                                Series 4 40mm</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/apple-watch-series-4-44mm">Apple
+                                                Watch
+                                                Series 4 44mm</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/apple-watch-series-3">Apple Watch
+                                        Series 3</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/apple-watch-series-3-38mm">Apple
+                                                Watch
+                                                Series 3 38mm</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/apple-watch-series-3-42mm">Apple
+                                                Watch
+                                                Series 3 42mm</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="has-child"><a href="https://hoanghaimobile.jp/chuyen-muc/macbook">Macbook</a>
+                            <ul>
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/macbook-2020">MacBook 2020
+                                        <span class="status">New</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-air-2020">MacBook Air
+                                                2020</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-pro-2020">MacBook Pro
+                                                2020</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/macbook-2019">MacBook 2019</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-air-2019">MacBook Air
+                                                2019</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-pro-2019">MacBook Pro
+                                                2019</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/macbook-2018">MacBook 2018</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-air-2018">MacBook Air
+                                                2018</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-pro-2018">MacBook Pro
+                                                2018</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/macbook-2017">MacBook 2017</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-air-2017">MacBook Air
+                                                2017</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-pro-2017">MacBook Pro
+                                                2017</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/macbook-2016">MacBook 2016</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-air-2016">MacBook Air
+                                                2016</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-pro-2016">MacBook Pro
+                                                2016</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/macbook-2015">MacBook 2015</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-air-2015">MacBook Air
+                                                2015</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-pro-2015">MacBook Pro
+                                                2015</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/macbook-2014">MacBook 2014</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-air-2014">MacBook Air
+                                                2014</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-pro-2014">MacBook Pro
+                                                2014</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/macbook-2013">MacBook 2013</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-air-2013">MacBook Air
+                                                2013</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-pro-2013">MacBook Pro
+                                                2013</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/macbook-2012">MacBook 2012</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-air-2012">MacBook Air
+                                                2012</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-pro-2012">MacBook Pro
+                                                2012</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="has-child"><a href="https://hoanghaimobile.jp/chuyen-muc/sim-wifi">Sim Wifi</a>
+                            <ul>
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/wifi-cam-tay">Wifi
+                                        Cầm Tay
+                                        <span class="status">New</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/wifi-pokemon-100gb">Wifi Pokemon
+                                                100Gb</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/wifi-pokemon-200gb">Wifi Pokemon
+                                                200Gb</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/wifi-co-dinh">Wifi cố định</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/sim-nghe-goi">Sim
+                                        nghe gọi</a>
+                                    <ul>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a href="https://hoanghaimobile.jp/chuyen-muc-con/sim-data">Sim
+                                        data</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/sim-data-softbank">Sim data
+                                                SoftBank</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/sim-data-docomo">Sim data
+                                                Docomo</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="has-child last-child"><a href="https://hoanghaimobile.jp/chuyen-muc/phu-kien">Phụ
+                                Kiện</a>
+                            <ul>
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/phu-kien-iphone">Phụ
+                                        Kiện iPhone
+                                        <span class="status">New</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/sac-iphone">Sạc iPhone</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/dinh-vi-iphone">Định Vị iPhone</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/phu-kien-ipad">Phụ
+                                        Kiện iPad</a>
+                                    <ul>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/phu-kien-airpod">Phụ
+                                        Kiện Airpod</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/op-airpod">Ốp AirPod</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class=""><a href="https://hoanghaimobile.jp/chuyen-muc/laptop-pc-gaming">Laptop Pc
+                                Gaming</a>
+                        </li>
+                        <li><a href="https://hoanghaimobile.jp/blog">Tin Tức</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <header id="headerFixed_PC" class="header_PC">
+        <div class="responsive header-bottom container-lg d-flex justify-content-between align-items-center">
+            <nav class="nav-categories">
+                <div class="">
+                    <ul>
+                        <li class="home active">
+                            <a href="#">
+                                <i class="fa fa-home"></i>
+                            </a>
+                        </li>
+                        <li class="has-child">
+                            <a href="https://hoanghaimobile.jp/chuyen-muc/iphone">iPhone</a>
+                            <ul>
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/iphone-12-12-mini-12-pro-12-pro-max">iPhone
+                                        12 - 12 Mini - 12 Pro - 12 Pro Max
+                                        <span class="status">New</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-12">iPhone 12</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-12-mini">iPhone 12 Mini</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-12-pro">iPhone 12 Pro</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-12-pro-max">iPhone 12 Pro
+                                                Max</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/iphone-se-2020">iPhone SE
+                                        2020</a>
+                                    <ul>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/iphone-11-11-pro-11-pro-max">iPhone
+                                        11 - 11 Pro - 11 Pro Max</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-11">iPhone 11</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-11-pro">iPhone 11 Pro</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-11-pro-max">iPhone 11 Pro
+                                                Max</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/iphone-xs-xs-max">iPhone Xs - Xs
+                                        Max</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-xs">iPhone Xs</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-xs-max">iPhone Xs Max</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/iphone-xr-x">iPhone
+                                        Xr - X</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-xr">iPhone Xr</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-x">iPhone X</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/iphone-8-8-plus">iPhone 8 - 8
+                                        Plus</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-8">iPhone 8</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-8-plus">iPhone 8 Plus</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/iphone-7-7-plus">iPhone 7 - 7
+                                        Plus</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-7">iPhone 7</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-7-plus">iPhone 7 Plus</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/iphone-6s-6s-plus">iPhone 6s - 6s
+                                        Plus</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-6s">iPhone 6S</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/iphone-6s-plus">iPhone 6S Plus</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-child"><a href="https://hoanghaimobile.jp/chuyen-muc/ipad">iPad</a>
+                            <ul>
+                                <li class="has-child">
+                                    <a href="https://hoanghaimobile.jp/chuyen-muc-con/ipad-pro">iPad
+                                        Pro
+                                        <span class="status">New</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-pro-5-2021">iPad Pro 5
+                                                2021</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-pro-4-2020">iPad Pro 4
+                                                2020</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-pro-3-2018">iPad Pro 3
+                                                2018</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-pro-2-2017">iPad Pro 2
+                                                2017</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-pro-97in-2016">iPad Pro 9.7in
+                                                2016</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-pro-1-2015">iPad Pro 1
+                                                2015</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="has-child"><a href="https://hoanghaimobile.jp/chuyen-muc-con/ipad-air">iPad
+                                        Air</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-air-4-109in-2020">iPad Air 4
+                                                10.9in 2020</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-air-3-105in-2019">iPad Air 3
+                                                10.5in 2019</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-air-2-97in-2014">iPad Air 2
+                                                9.7in
+                                                2014</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-air-1-97in-2013">iPad Air 1
+                                                9.7in
+                                                2013</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="has-child"><a href="https://hoanghaimobile.jp/chuyen-muc-con/ipad-mini">iPad
+                                        Mini</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-mini-5-2019">iPad Mini 5
+                                                2019</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-mini-4-2015">iPad Mini 4
+                                                2015</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-mini-3-2014">iPad Mini 3
+                                                2014</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="has-child"><a href="https://hoanghaimobile.jp/chuyen-muc-con/ipad">iPad</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-102in-2020">iPad 10.2in
+                                                2020</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-7-102in-2019">iPad 7 10.2in
+                                                2019</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-6-97in-2018">iPad 6 9.7in
+                                                2018</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/ipad-5-97in-2017">iPad 5 9.7in
+                                                2017</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-child"><a href="https://hoanghaimobile.jp/chuyen-muc/airpods">AirPods</a>
+                            <ul>
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/airpods-max">Airpods
+                                        Max
+                                        <span class="status">New</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/airpods-max">Airpods Max</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/airpods-pro">AirPods
+                                        Pro</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/airpods-pro">Airpods Pro</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/airpods-2">AirPods
+                                        2</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/airpods-2-sac-thuong">AirPods 2 sạc
+                                                thường</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/airpods-2-sac-khong-day">AirPods 2
+                                                sạc
+                                                không dây</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="has-child"><a href="https://hoanghaimobile.jp/chuyen-muc/apple-watch">Apple Watch</a>
+                            <ul>
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/apple-watch-se">Apple Watch SE
+                                        <span class="status">New</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/apple-watch-se-40mm">Apple Watch SE
+                                                40mm</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/apple-watch-se-44mm">Apple Watch SE
+                                                44mm</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/apple-watch-series-6">Apple Watch
+                                        Series 6</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/apple-watch-series-6-40mm">Apple
+                                                Watch
+                                                Series 6 40mm</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/apple-watch-series-6-44mm">Apple
+                                                Watch
+                                                Series 6 44mm</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/apple-watch-series-5">Apple Watch
+                                        Series 5</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/apple-watch-series-5-40mm">Apple
+                                                Watch
+                                                Series 5 40mm</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/apple-watch-series-5-44mm">Apple
+                                                Watch
+                                                Series 5 44mm</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/apple-watch-series-4">Apple Watch
+                                        Series 4</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/apple-watch-series-4-40mm">Apple
+                                                Watch
+                                                Series 4 40mm</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/apple-watch-series-4-44mm">Apple
+                                                Watch
+                                                Series 4 44mm</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/apple-watch-series-3">Apple Watch
+                                        Series 3</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/apple-watch-series-3-38mm">Apple
+                                                Watch
+                                                Series 3 38mm</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/apple-watch-series-3-42mm">Apple
+                                                Watch
+                                                Series 3 42mm</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="has-child"><a href="https://hoanghaimobile.jp/chuyen-muc/macbook">Macbook</a>
+                            <ul>
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/macbook-2020">MacBook 2020
+                                        <span class="status">New</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-air-2020">MacBook Air
+                                                2020</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-pro-2020">MacBook Pro
+                                                2020</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/macbook-2019">MacBook 2019</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-air-2019">MacBook Air
+                                                2019</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-pro-2019">MacBook Pro
+                                                2019</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/macbook-2018">MacBook 2018</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-air-2018">MacBook Air
+                                                2018</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-pro-2018">MacBook Pro
+                                                2018</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/macbook-2017">MacBook 2017</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-air-2017">MacBook Air
+                                                2017</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-pro-2017">MacBook Pro
+                                                2017</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/macbook-2016">MacBook 2016</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-air-2016">MacBook Air
+                                                2016</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-pro-2016">MacBook Pro
+                                                2016</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/macbook-2015">MacBook 2015</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-air-2015">MacBook Air
+                                                2015</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-pro-2015">MacBook Pro
+                                                2015</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/macbook-2014">MacBook 2014</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-air-2014">MacBook Air
+                                                2014</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-pro-2014">MacBook Pro
+                                                2014</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/macbook-2013">MacBook 2013</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-air-2013">MacBook Air
+                                                2013</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-pro-2013">MacBook Pro
+                                                2013</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/macbook-2012">MacBook 2012</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-air-2012">MacBook Air
+                                                2012</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/macbook-pro-2012">MacBook Pro
+                                                2012</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="has-child"><a href="https://hoanghaimobile.jp/chuyen-muc/sim-wifi">Sim Wifi</a>
+                            <ul>
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/wifi-cam-tay">Wifi
+                                        Cầm Tay
+                                        <span class="status">New</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/wifi-pokemon-100gb">Wifi Pokemon
+                                                100Gb</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/wifi-pokemon-200gb">Wifi Pokemon
+                                                200Gb</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/wifi-co-dinh">Wifi cố định</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/sim-nghe-goi">Sim
+                                        nghe gọi</a>
+                                    <ul>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a href="https://hoanghaimobile.jp/chuyen-muc-con/sim-data">Sim
+                                        data</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/sim-data-softbank">Sim data
+                                                SoftBank</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/sim-data-docomo">Sim data
+                                                Docomo</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="has-child"><a href="https://hoanghaimobile.jp/chuyen-muc/phu-kien">Phụ Kiện</a>
+                            <ul>
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/phu-kien-iphone">Phụ
+                                        Kiện iPhone
+                                        <span class="status">New</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/sac-iphone">Sạc iPhone</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/dinh-vi-iphone">Định Vị iPhone</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/phu-kien-ipad">Phụ
+                                        Kiện iPad</a>
+                                    <ul>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child"><a
+                                        href="https://hoanghaimobile.jp/chuyen-muc-con/phu-kien-airpod">Phụ
+                                        Kiện Airpod</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://hoanghaimobile.jp/model/op-airpod">Ốp AirPod</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class=""><a href="https://hoanghaimobile.jp/chuyen-muc/laptop-pc-gaming">Laptop Pc
+                                Gaming</a>
+                        </li>
+                        <li><a href="https://hoanghaimobile.jp/blog">Tin Tức</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </header>
     <div class="body__content">
         <!-- BANNER  -->
         <section class="banner">
-            <div class="owl-carousel owl-theme banner__carousel">
+            <div class="owl-carousel owl-theme banner__carousel d-md-none">
                 <div class="item">
                     <a href="#"><img class="d-block w-100" src="./img/Image_1.png" alt="banner1"></a>
                 </div>
@@ -422,9 +1763,50 @@
                     <a href="#"><img class="d-block w-100" src="./img/Image_1.png" alt="banner6"></a>
                 </div>
             </div>
+            <div class="container responsive">
+                <div class="row">
+                    <div class="banner__left col-md-7">
+                        <div class="owl-carousel owl-theme banner__carousel">
+                            <div class="item">
+                                <a href="https://hoanghaimobile.jp/san-pham/iphone-12-pro-max-quoc-te-chinh-hang"><img
+                                        src="./img/banner1.jpg" alt="banner_1"></a>
+                            </div>
+                            <div class="item"><a
+                                    href="https://hoanghaimobile.jp/san-pham/tai-nghe-airpod-2-hop-sac-thuong-chinh-hang"><img
+                                        src="./img/banner2.jpg" alt="banner_2"></a>
+                            </div>
+                            <div class="item"><a href="#">
+                                    <img src="./img/banner3.jpg" alt="banner_1">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner__right col-md-5">
+                        <div class="banner__right__thumbnail">
+                            <div class="banner__right-content row">
+                                <div class="col-12">
+                                    <a href="#">
+                                        <img class="img-fluid" src="./img/4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="pr-0 col-6">
+                                    <a href="">
+                                        <img class="img-fluid" src="./img/Artboard-18300.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="pl-0 col-6">
+                                    <a href="">
+                                        <img class="img-fluid" src="./img/Artboard-19300.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- CATEGORIES -->
-        <section class="categories section">
+        <section class="categories section d-md-none">
             <div class="categories__content">
                 <div class="row">
                     <div class="col-3">
@@ -488,45 +1870,47 @@
         </section>
         <!-- SELLING IPHONE PRODUCTS  -->
         <section class="products iphone section">
-            <div class="products__content">
-                <div class="">
-                    <p class="products__title">IPhone Bán Chạy Nhất</p>
-                    <ul class="nav nav-tabs list__iphone" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-subcategory="iphone12" data-toggle="tab" href="#iphone12"
-                                role="tab">IPhone 12</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-subcategory="iphone11" data-toggle="tab" href="#iphone11"
-                                role="tab">Iphone
-                                11</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-subcategory="iphoneX" data-toggle="tab" href="#iphoneX"
-                                role="tab">IPhone
-                                X</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-subcategory="iphone8" data-toggle="tab" href="#iphone8"
-                                role="tab">IPhone
-                                8</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-subcategory="iphone7" data-toggle="tab" href="#iphone7"
-                                role="tab">IPhone
-                                7</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-subcategory="iphone6" data-toggle="tab" href="#iphone6"
-                                role="tab">IPhone
-                                6</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-subcategory="oldIphone" data-toggle="tab" href="#oldIPhone"
-                                role="tab">Máy Cũ
-                                Giá Rẻ</a>
-                        </li>
-                    </ul>
+            <div class="products__content container-md">
+                <div class="section_pc">
+                    <div class="products__title mb-md-2 d-lg-flex justify-content-between align-items-center">
+                        <p class="products__title products__title_cotent">IPhone Bán Chạy Nhất</p>
+                        <ul class="nav nav-tabs list__iphone" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-subcategory="iphone12" data-toggle="tab"
+                                    href="#iphone12" role="tab">IPhone 12</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-subcategory="iphone11" data-toggle="tab" href="#iphone11"
+                                    role="tab">Iphone
+                                    11</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-subcategory="iphoneX" data-toggle="tab" href="#iphoneX"
+                                    role="tab">IPhone
+                                    X</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-subcategory="iphone8" data-toggle="tab" href="#iphone8"
+                                    role="tab">IPhone
+                                    8</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-subcategory="iphone7" data-toggle="tab" href="#iphone7"
+                                    role="tab">IPhone
+                                    7</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-subcategory="iphone6" data-toggle="tab" href="#iphone6"
+                                    role="tab">IPhone
+                                    6</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-subcategory="oldIphone" data-toggle="tab" href="#oldIPhone"
+                                    role="tab">Máy Cũ
+                                    Giá Rẻ</a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="tab-content">
                         <div class="tab-pane fade show active" id="iphone12" role="tabpanel" aria-labelledby="iphone12">
                             <div class="swiper-container">
@@ -540,21 +1924,21 @@
                                             </div>
                                             <div class="card__memory">
                                                 <ul class="row card__memory-content">
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="128" class="card__memory-item"><a
                                                                 class="memory-item active" href="#">128 GB</a></li>
                                                     </div>
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="256" class="card__memory-item"><a
                                                                 class="memory-item" href="#">256
                                                                 GB</a></li>
                                                     </div>
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="512" class="card__memory-item"><a
                                                                 class="memory-item" href="#">512
                                                                 GB</a></li>
                                                     </div>
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="1024" class="card__memory-item"><a
                                                                 class="memory-item" href="#">1 TB
                                                             </a></li>
@@ -609,21 +1993,21 @@
                                             </div>
                                             <div class="card__memory">
                                                 <ul class="row card__memory-content">
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="128" class="card__memory-item"><a
                                                                 class="memory-item active" href="#">128 GB</a></li>
                                                     </div>
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="256" class="card__memory-item"><a
                                                                 class="memory-item" href="#">256
                                                                 GB</a></li>
                                                     </div>
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="512" class="card__memory-item"><a
                                                                 class="memory-item" href="#">512
                                                                 GB</a></li>
                                                     </div>
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="1024" class="card__memory-item"><a
                                                                 class="memory-item" href="#">1 TB
                                                             </a></li>
@@ -678,21 +2062,21 @@
                                             </div>
                                             <div class="card__memory">
                                                 <ul class="row card__memory-content">
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="128" class="card__memory-item"><a
                                                                 class="memory-item active" href="#">128 GB</a></li>
                                                     </div>
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="256" class="card__memory-item"><a
                                                                 class="memory-item" href="#">256
                                                                 GB</a></li>
                                                     </div>
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="512" class="card__memory-item"><a
                                                                 class="memory-item" href="#">512
                                                                 GB</a></li>
                                                     </div>
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="1024" class="card__memory-item"><a
                                                                 class="memory-item" href="#">1 TB
                                                             </a></li>
@@ -772,32 +2156,35 @@
         </section>
         <!-- SELLING IPAD PRODUCTS -->
         <section class="products ipad section">
-            <div class="products__content">
-                <div class="">
-                    <p class="products__title">IPad Bán Chạy Nhất</p>
-                    <ul class="nav nav-tabs list_ipad" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#ipad1" role="tab">IPad 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#ipad2" role="tab">IPad 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#ipad3" role="tab">IPad 3</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#ipad4" role="tab">IPad 4</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#ipad5" role="tab">IPad 5</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#ipad6" role="tab">IPad 6</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#ipad7" role="tab">IPad 7</a>
-                        </li>
-                    </ul>
+            <div class="products__content container-md">
+                <div class="section_pc">
+                    <div class="products__title mb-md-2 d-lg-flex justify-content-between align-items-center">
+                        <p class="products__title products__title_cotent">IPad Bán Chạy Nhất</p>
+                        <ul class="nav nav-tabs list_ipad" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#ipad1" role="tab">IPad 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#ipad2" role="tab">IPad 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#ipad3" role="tab">IPad 3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#ipad4" role="tab">IPad 4</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#ipad5" role="tab">IPad 5</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#ipad6" role="tab">IPad 6</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#ipad7" role="tab">IPad 7</a>
+                            </li>
+                        </ul>
+                    </div>
+
                     <div class="tab-content">
                         <div class="tab-pane fade show active" id="ipad1" role="tabpanel" aria-labelledby="iphone12">
                             <div class="swiper-container">
@@ -810,21 +2197,21 @@
                                             </div>
                                             <div class="card__memory">
                                                 <ul class="row card__memory-content">
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="128" class="card__memory-item"><a
                                                                 class="memory-item active" href="#">128 GB</a></li>
                                                     </div>
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="256" class="card__memory-item"><a
                                                                 class="memory-item" href="#">256
                                                                 GB</a></li>
                                                     </div>
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="512" class="card__memory-item"><a
                                                                 class="memory-item" href="#">512
                                                                 GB</a></li>
                                                     </div>
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="1024" class="card__memory-item"><a
                                                                 class="memory-item" href="#">1 TB
                                                             </a></li>
@@ -874,26 +2261,26 @@
                                         <img src="./img/ImgCard_IPhone12ProMax.png" class="card-img-top" alt="CardNo1">
                                         <div class="card-body">
                                             <div class="">
-                                                <p class="card-text">iPhone 12 Pro Max Quốc Tế
-                                                    Chính Hãng 1</p>
+                                                <p class="card-text">iPad 2 Pro Max Quốc Tế
+                                                    Chính Hãng</p>
                                             </div>
                                             <div class="card__memory">
                                                 <ul class="row card__memory-content">
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="128" class="card__memory-item"><a
                                                                 class="memory-item active" href="#">128 GB</a></li>
                                                     </div>
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="256" class="card__memory-item"><a
                                                                 class="memory-item" href="#">256
                                                                 GB</a></li>
                                                     </div>
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="512" class="card__memory-item"><a
                                                                 class="memory-item" href="#">512
                                                                 GB</a></li>
                                                     </div>
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="1024" class="card__memory-item"><a
                                                                 class="memory-item" href="#">1TB
                                                                 GB</a></li>
@@ -943,26 +2330,26 @@
                                         <img src="./img/ImgCard_IPhone12ProMax.png" class="card-img-top" alt="CardNo1">
                                         <div class="card-body">
                                             <div class="">
-                                                <p class="card-text">iPhone 12 Pro Max Quốc Tế
-                                                    Chính Hãng 1</p>
+                                                <p class="card-text">iPad 2 Pro Max Quốc Tế
+                                                    Chính Hãng</p>
                                             </div>
                                             <div class="card__memory">
                                                 <ul class="row card__memory-content">
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="128" class="card__memory-item"><a
                                                                 class="memory-item active" href="#">128 GB</a></li>
                                                     </div>
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="256" class="card__memory-item"><a
                                                                 class="memory-item" href="#">256
                                                                 GB</a></li>
                                                     </div>
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="512" class="card__memory-item"><a
                                                                 class="memory-item" href="#">512
                                                                 GB</a></li>
                                                     </div>
-                                                    <div class="col-div col-4">
+                                                    <div class="col-div col-4 col-md-3">
                                                         <li data-capacity="1024" class="card__memory-item"><a
                                                                 class="memory-item" href="#">1TB
                                                                 GB</a></li>
@@ -1008,7 +2395,213 @@
                                             <button class="btn w-100">Mua Ngay</button>
                                         </div>
                                     </div>
-
+                                    <div data-id="ipad_4" class="card swiper-slide">
+                                        <img src="./img/ImgCard_IPhone12ProMax.png" class="card-img-top" alt="CardNo1">
+                                        <div class="card-body">
+                                            <div class="">
+                                                <p class="card-text">iPad 2 Pro Max Quốc Tế
+                                                    Chính Hãng</p>
+                                            </div>
+                                            <div class="card__memory">
+                                                <ul class="row card__memory-content">
+                                                    <div class="col-div col-4 col-md-3">
+                                                        <li data-capacity="128" class="card__memory-item"><a
+                                                                class="memory-item active" href="#">128 GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4 col-md-3">
+                                                        <li data-capacity="256" class="card__memory-item"><a
+                                                                class="memory-item" href="#">256
+                                                                GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4 col-md-3">
+                                                        <li data-capacity="512" class="card__memory-item"><a
+                                                                class="memory-item" href="#">512
+                                                                GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4 col-md-3">
+                                                        <li data-capacity="1024" class="card__memory-item"><a
+                                                                class="memory-item" href="#">1TB
+                                                                GB</a></li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="card__color">
+                                                <ul class="row card__color-content">
+                                                    <div class="col-div col-3">
+                                                        <li data-color="blue" class="card__color-item">
+                                                            <a class="item" href="#">
+                                                                <img class="active" src="./img/Color_Blue.png"
+                                                                    alt="blue">
+                                                            </a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="silver" class="card__color-item">
+                                                            <a class="item" href="#"><img src="./img/Color_Silver.png"
+                                                                    alt="silver"></a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="gray" class="card__color-item">
+                                                            <a class="item" href="#"><img src="./img/Color_Gray.png"
+                                                                    alt="gray"></a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="gold" class="card__color-item"><a class="item"
+                                                                href="#"><img src="./img/Color_Gold.png" alt="gold"></a>
+                                                        </li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="card__price">
+                                                <span>10.000¥</span>
+                                            </div>
+                                            <div class="card__presents">
+                                                <p>Tặng mã giảm giá RTYH trị giá 1.000 ¥</p>
+                                                <p>Tặng ốp cường lực con voi</p>
+                                            </div>
+                                            <button class="btn w-100">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                    <div data-id="ipad_5" class="card swiper-slide">
+                                        <img src="./img/ImgCard_IPhone12ProMax.png" class="card-img-top" alt="CardNo1">
+                                        <div class="card-body">
+                                            <div class="">
+                                                <p class="card-text">iPad 2 Pro Max Quốc Tế
+                                                    Chính Hãng</p>
+                                            </div>
+                                            <div class="card__memory">
+                                                <ul class="row card__memory-content">
+                                                    <div class="col-div col-4 col-md-3">
+                                                        <li data-capacity="128" class="card__memory-item"><a
+                                                                class="memory-item active" href="#">128 GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4 col-md-3">
+                                                        <li data-capacity="256" class="card__memory-item"><a
+                                                                class="memory-item" href="#">256
+                                                                GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4 col-md-3">
+                                                        <li data-capacity="512" class="card__memory-item"><a
+                                                                class="memory-item" href="#">512
+                                                                GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4 col-md-3">
+                                                        <li data-capacity="1024" class="card__memory-item"><a
+                                                                class="memory-item" href="#">1TB
+                                                                GB</a></li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="card__color">
+                                                <ul class="row card__color-content">
+                                                    <div class="col-div col-3">
+                                                        <li data-color="blue" class="card__color-item">
+                                                            <a class="item" href="#">
+                                                                <img class="active" src="./img/Color_Blue.png"
+                                                                    alt="blue">
+                                                            </a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="silver" class="card__color-item">
+                                                            <a class="item" href="#"><img src="./img/Color_Silver.png"
+                                                                    alt="silver"></a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="gray" class="card__color-item">
+                                                            <a class="item" href="#"><img src="./img/Color_Gray.png"
+                                                                    alt="gray"></a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="gold" class="card__color-item"><a class="item"
+                                                                href="#"><img src="./img/Color_Gold.png" alt="gold"></a>
+                                                        </li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="card__price">
+                                                <span>10.000¥</span>
+                                            </div>
+                                            <div class="card__presents">
+                                                <p>Tặng mã giảm giá RTYH trị giá 1.000 ¥</p>
+                                                <p>Tặng ốp cường lực con voi</p>
+                                            </div>
+                                            <button class="btn w-100">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                    <div data-id="ipad_6" class="card swiper-slide">
+                                        <img src="./img/ImgCard_IPhone12ProMax.png" class="card-img-top" alt="CardNo1">
+                                        <div class="card-body">
+                                            <div class="">
+                                                <p class="card-text">iPad 2 Pro Max Quốc Tế
+                                                    Chính Hãng</p>
+                                            </div>
+                                            <div class="card__memory">
+                                                <ul class="row card__memory-content">
+                                                    <div class="col-div col-4 col-md-3">
+                                                        <li data-capacity="128" class="card__memory-item"><a
+                                                                class="memory-item active" href="#">128 GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4 col-md-3">
+                                                        <li data-capacity="256" class="card__memory-item"><a
+                                                                class="memory-item" href="#">256
+                                                                GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4 col-md-3">
+                                                        <li data-capacity="512" class="card__memory-item"><a
+                                                                class="memory-item" href="#">512
+                                                                GB</a></li>
+                                                    </div>
+                                                    <div class="col-div col-4 col-md-3">
+                                                        <li data-capacity="1024" class="card__memory-item"><a
+                                                                class="memory-item" href="#">1TB
+                                                                GB</a></li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="card__color">
+                                                <ul class="row card__color-content">
+                                                    <div class="col-div col-3">
+                                                        <li data-color="blue" class="card__color-item">
+                                                            <a class="item" href="#">
+                                                                <img class="active" src="./img/Color_Blue.png"
+                                                                    alt="blue">
+                                                            </a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="silver" class="card__color-item">
+                                                            <a class="item" href="#"><img src="./img/Color_Silver.png"
+                                                                    alt="silver"></a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="gray" class="card__color-item">
+                                                            <a class="item" href="#"><img src="./img/Color_Gray.png"
+                                                                    alt="gray"></a>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-div col-3">
+                                                        <li data-color="gold" class="card__color-item"><a class="item"
+                                                                href="#"><img src="./img/Color_Gold.png" alt="gold"></a>
+                                                        </li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="card__price">
+                                                <span>10.000¥</span>
+                                            </div>
+                                            <div class="card__presents">
+                                                <p>Tặng mã giảm giá RTYH trị giá 1.000 ¥</p>
+                                                <p>Tặng ốp cường lực con voi</p>
+                                            </div>
+                                            <button class="btn w-100">Mua Ngay</button>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="swiper-button-prev">
                                     <i class="fa fa-chevron-left"></i>
@@ -1043,76 +2636,104 @@
         <!-- FOOTER  -->
         <footer>
             <div class="footer__content section">
-                <div class="main-content content1">
-                    <div class="row">
-                        <div class="col-7 footer__item">
-                            <h6>Thông Tin Công Ty</h6>
-                            <div class="underLine"></div>
-                            <p>Giới thiệu</p>
-                            <p>Hướng dẫn mua hàng</p>
-                            <p>Thẻ ngân hàng</p>
+                <div class="container-md">
+                    <div class="section_pc">
+                        <div class="main-content content1 d-md-none">
+                            <div class="row">
+                                <div class="col-7 col-md-3 footer__item">
+                                    <h6>Thông Tin Công Ty</h6>
+                                    <div class="underLine"></div>
+                                    <p>Giới thiệu</p>
+                                    <p>Hướng dẫn mua hàng</p>
+                                    <p>Thẻ ngân hàng</p>
+                                </div>
+                                <div class="col-5 col-md-3 footer__item">
+                                    <h6>Chính Sách</h6>
+                                    <div class="underLine"></div>
+                                    <p>Chính sách bảo hành</p>
+                                    <p>Chính sách hoạt động</p>
+                                    <p>Bảo hành tại Nhật Bản</p>
+                                    <p>Bảo hành tại Việt Nam</p>
+                                </div>
+                                <div class="col-7 col-md-3 footer__item">
+                                    <h6>Liên Hệ</h6>
+                                    <div class="underLine"></div>
+                                    <p>HotLine : 0809.346.6789</p>
+                                    <p>Email : hoanghai1710021@gmail.com</p>
+                                </div>
+                                <div class="col-5 col-md-3  footer__item">
+                                    <h6>Các Chi Nhánh</h6>
+                                    <div class="underLine"></div>
+                                    <p>Chi nhánh Otsuka Tokyo</p>
+                                    <p>Chi nhánh Osu Nagoya</p>
+                                    <p>Chi nhánh Việt Nam</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-5 footer__item">
-                            <h6>Chính Sách</h6>
-                            <div class="underLine"></div>
-                            <p>Chính sách bảo hành</p>
-                            <p>Chính sách hoạt động</p>
-                            <p>Bảo hành tại Nhật Bản</p>
-                            <p>Bảo hành tại Việt Nam</p>
-                        </div>
-                        <div class="col-7 footer__item">
-                            <h6>Liên Hệ</h6>
-                            <div class="underLine"></div>
-                            <p>HotLine : 0809.346.6789</p>
-                            <p>Email : hoanghai1710021@gmail.com</p>
-                        </div>
-                        <div class="col-5 footer__item">
-                            <h6>Các Chi Nhánh</h6>
-                            <div class="underLine"></div>
-                            <p>Chi nhánh Otsuka Tokyo</p>
-                            <p>Chi nhánh Osu Nagoya</p>
-                            <p>Chi nhánh Việt Nam</p>
+                        <div class="main-content content2">
+                            <div class="row content2">
+                                <div class="col-4 col-md-3 footer__item">
+                                    <h6>Thông Tin Công Ty</h6>
+                                    <div class="underLine"></div>
+                                    <p>Giới thiệu</p>
+                                    <p>Hướng dẫn mua hàng</p>
+                                    <p>Thẻ ngân hàng</p>
+                                </div>
+                                <div class="col-4 col-md-3 footer__item">
+                                    <h6>Chính Sách</h6>
+                                    <div class="underLine"></div>
+                                    <p>Chính sách bảo hành</p>
+                                    <p>Chính sách hoạt động</p>
+                                    <p>Bảo hành tại Nhật Bản</p>
+                                    <p>Bảo hành tại Việt Nam</p>
+                                </div>
+                                <div class="col-4 col-md-3 footer__item">
+                                    <h6>Các Chi Nhánh</h6>
+                                    <div class="underLine"></div>
+                                    <p>Chi nhánh Otsuka Tokyo</p>
+                                    <p>Chi nhánh Osu Nagoya</p>
+                                    <p>Chi nhánh Việt Nam</p>
+                                </div>
+                                <div class="col-12 col-md-3 footer__item">
+                                    <h6>Liên Hệ</h6>
+                                    <div class="underLine"></div>
+                                    <p>HotLine : 0809.346.6789</p>
+                                    <p>Email : hoanghai1710021@gmail.com</p>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="main-content content2">
-                    <div class="row content2">
-                        <div class="col-4 footer__item">
-                            <h6>Thông Tin Công Ty</h6>
-                            <div class="underLine"></div>
-                            <p>Giới thiệu</p>
-                            <p>Hướng dẫn mua hàng</p>
-                            <p>Thẻ ngân hàng</p>
-                        </div>
-                        <div class="col-4 footer__item">
-                            <h6>Chính Sách</h6>
-                            <div class="underLine"></div>
-                            <p>Chính sách bảo hành</p>
-                            <p>Chính sách hoạt động</p>
-                            <p>Bảo hành tại Nhật Bản</p>
-                            <p>Bảo hành tại Việt Nam</p>
-                        </div>
-                        <div class="col-4 footer__item">
-                            <h6>Các Chi Nhánh</h6>
-                            <div class="underLine"></div>
-                            <p>Chi nhánh Otsuka Tokyo</p>
-                            <p>Chi nhánh Osu Nagoya</p>
-                            <p>Chi nhánh Việt Nam</p>
-                        </div>
-                        <div class="col-12 footer__item">
-                            <h6>Liên Hệ</h6>
-                            <div class="underLine"></div>
-                            <p>HotLine : 0809.346.6789</p>
-                            <p>Email : hoanghai1710021@gmail.com</p>
-                        </div>
-
-                    </div>
-                </div>
-
             </div>
         </footer>
     </div>
-
+<!-- MODAL -->
+<div class="popup-newsletter modal fade show" id="popupNewsletter" tabindex="-1" role="dialog" aria-modal="true" style="padding-right: 6px; display: block;">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">                    
+                <button type="button" class="popup-newsletter__close" data-dismiss="modal" aria-label="Close">
+                    <i class="fa fa-times"></i>
+                </button>
+             </div>                
+            <div class="popup-newsletter__register modal-body">
+                <h3>Nhận tin tức giảm giá</h3>
+                <p>Khi đăng kí nhận bản tin từ Hoàng Hải Store!</p>
+                <form class="popup-newsletter__form" action="https://hoanghaimobile.jp/email/subcribe" method="GET">
+                    <input hidden="" id="type" type="text" value="subcribe">
+                    <div class="form-group">
+                        <input type="email" class="popup-newsletter__email form-control" placeholder="Nhập email của bạn" required="">
+                    </div>
+                    <div class="popup-newsletter__commit">
+                        <i class="fa fa-check-square"></i> Tôi đồng ý với <a href="" target="_blank">điều khoản</a> của Hoàng Hải Store
+                    </div>
+                    <button type="submit" class="popup-newsletter__submit btn btn-primary">Đăng ký ngay</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>  
     <!-- jquery  -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

@@ -11,16 +11,18 @@
     
 //Layouts
 @import './Layouts/header';
+
 @import './Layouts/banner';
 @import './Layouts/categories';
 @import './Layouts/sellingProducts';
 @import './Layouts/footer';
+@import './Layouts/modal';
 
 //Components
 @import './Components/cover';
 @import './Components/card';
 @import './Components/section';
-
+@import './Components/responsive';
 //Pages
 @import './Pages/home';
 

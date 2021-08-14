@@ -1,0 +1,104 @@
+.modal {
+    .modal-dialog {
+        .modal-content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            pointer-events: auto;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 0.3rem;
+            outline: 0;
+            .modal-header {
+                position: absolute;
+                top: 0;
+                right: 5px;
+                background-color: transparent;
+                border: none;
+                z-index: 10;
+                padding: 0;
+                .popup-newsletter__close {
+                    font-size: $fs-6;
+                    background-color: transparent;
+                    color: $color-gray-3-pc;
+                    border: none;
+                    line-height: 1;
+                    font-weight: 300;
+                    &:hover {
+                        color: $color-white-0-pc;
+                    }
+                }
+            }
+
+            .popup-newsletter__register {
+                background: #d62727;
+                text-align: center;
+                padding: 30px 1rem;
+                border-radius: 3px;
+                color: #fff;
+                h3 {
+                    font-size: 1.5rem;
+                }
+                p {
+                    margin-top: 0;
+                    margin-bottom: 1rem;
+                }
+                .popup-newsletter__form {
+                    input {
+                        border-color: #eaeaea;
+                    }
+                    .form-group {
+                        margin-bottom: 1rem;
+                        .popup-newsletter__email {
+                            height: $hg-3;
+                            &:focus {
+                                box-shadow: 0 0 10px 2px rgba(0, 195, 183, 0.25);
+                            }
+                        }
+                    }
+                    .popup-newsletter__commit {
+                        font-size: 13px;
+                        a {
+                            color: $color-white-0-pc;
+                            text-decoration: underline;
+                        }
+                    }
+                    .popup-newsletter__submit {
+                        margin-top: 1rem;
+                        background: #fff;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        color: #d62727;
+                        border-radius: 100px;
+                        padding: 10px 30px;
+                        font-size: 16px;
+                        border: none;
+                        &:hover {
+                            color: $color-white-0-pc;
+                            background-color: #ff6161;
+                        }
+                        &:focus {
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px){
+    .modal {
+        .modal-dialog {
+            .modal-content{
+                .popup-newsletter__register{
+                    p{
+                        font-size: $fs-2;
+                    }
+                }
+            }
+        }
+    }
+}

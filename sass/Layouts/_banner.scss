@@ -1,73 +1,167 @@
-.banner {
-    margin: $mg-2 - 2 $mg-1 - 2;
-    .banner__carousel {        
-        .owl-dots {
-            margin-top: 5px !important;
-            line-height: 0;
-            .owl-dot {
-                &.active{
-                    span{
-                        background-color: $color-red-0;
-                    }                    
-                }
-                span {
-                    width: 50px;
-                    height: 4px;
-                    margin: 0 $mg-0 + 2;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 400px){
+@media screen and (max-width: 767.98px){
     .banner {
- 
+        margin: $mg-2 - 2 $mg-1 - 2;
         .banner__carousel {        
-            .owl-dots {               
-                .owl-dot {                   
+            .owl-dots {
+                margin-top: 5px !important;
+                line-height: 0;
+                .owl-dot {
+                    &.active{
+                        span{
+                            background-color: $color-red-0;
+                        }                    
+                    }
                     span {
-                        width: 45px;                        
+                        width: 50px;
+                        height: 4px;
+                        margin: 0 $mg-0 + 2;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 400px){
+        .banner {
+     
+            .banner__carousel {        
+                .owl-dots {               
+                    .owl-dot {                   
+                        span {
+                            width: 45px;                        
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 370px){
+        .banner { 
+            .banner__carousel {        
+                .owl-dots {               
+                    .owl-dot {                   
+                        span {
+                            width: 40px;                        
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 340px){
+        .banner { 
+            .banner__carousel {        
+                .owl-dots {               
+                    .owl-dot {                   
+                        span {
+                            width: 35px;                        
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 600px){
+        .banner { 
+            .banner__carousel {        
+                .owl-dots {               
+                    .owl-dot {                   
+                        span {
+                            width: 65px;                        
+                        }
                     }
                 }
             }
         }
     }
 }
-@media screen and (max-width: 370px){
-    .banner { 
-        .banner__carousel {        
-            .owl-dots {               
-                .owl-dot {                   
-                    span {
-                        width: 40px;                        
+@media screen and (min-width: 767.99px){
+    .banner {
+        .banner__left {
+            padding: 0 $pd-1;
+            .banner__carousel {
+                &:hover{
+                    .owl-nav{
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+                .owl-nav {
+                    display: flex;
+                    justify-content: space-between;
+                    position: absolute;
+                    top: 30%;
+                    width: 100%;
+                    margin-top: 0;
+                    opacity: 0;
+                    visibility: hidden;                
+                    transition: all 0.5s;
+                    button {
+                        font-size: $fs-11 + 6;
+                        color: $color-gray-2-pc;
+                        &:hover {
+                            color: $color-red-0-pc;
+                            background-color: transparent;
+                        }
+                    }
+                }
+                .owl-dots {
+                    .owl-dot {
+                        &:hover,
+                        &.active {
+                            span {
+                                background-color: $color-red-0-pc;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .banner__right {
+            padding: 0 $pd-1;
+            .banner__right__thumbnail {
+                .banner__right-content {
+                    div {
+                        padding: 0 $pd-1;
+                        &:not(:first-child){
+                            height: $hg-9 + 15;
+                            overflow: hidden;
+                        }
                     }
                 }
             }
         }
     }
-}
-@media screen and (max-width: 340px){
-    .banner { 
-        .banner__carousel {        
-            .owl-dots {               
-                .owl-dot {                   
-                    span {
-                        width: 35px;                        
+    @media screen and (max-width: 1200px){
+        .banner{
+            .banner__right {
+               
+                .banner__right__thumbnail {
+                    .banner__right-content {
+                        div {
+                          
+                            &:not(:first-child){
+                                height: $hg-9 - 12;
+                                overflow: hidden;
+                            }
+                        }
                     }
                 }
             }
         }
     }
-}
-
-@media screen and (min-width: 600px){
-    .banner { 
-        .banner__carousel {        
-            .owl-dots {               
-                .owl-dot {                   
-                    span {
-                        width: 65px;                        
+    @media screen and (max-width: 992px){
+        .banner{
+            .banner__right {
+               
+                .banner__right__thumbnail {
+                    .banner__right-content {
+                        div {
+                          
+                            &:not(:first-child){
+                                height: $hg-7 + 2;
+                                overflow: hidden;
+                            }
+                        }
                     }
                 }
             }
