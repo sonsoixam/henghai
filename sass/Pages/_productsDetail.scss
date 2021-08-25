@@ -44,8 +44,7 @@
                     a {
                         cursor: inherit;
                         img {
-                            max-width: 231px;
-                            height: 231px;
+                            max-width: 400px;                            
                             cursor: inherit;
                         }
                     }
@@ -55,6 +54,7 @@
                     margin-bottom: $mg-2;
                 }
                 .product__capacity {
+                    justify-content: space-between;
                     .product__capacity-item {
                         display: flex;
                         align-items: center;
@@ -113,7 +113,8 @@
                             }
                             .capacity__title {
                                 font-weight: 500;
-                                margin-right: 15%;
+                                margin: 0 0 0 35px;
+                                padding-right: 10px;
                             }
                         }
                     }
@@ -122,6 +123,9 @@
                     text-align: left;
                     margin-top: $mg-1;
                     li {
+                        display: inline-flex;
+                        flex-direction: column;
+                        align-items: center;
                         position: relative;
                         width: $whpx-3 - 8;
                         padding: $pd-0 - 2 0;
@@ -134,9 +138,19 @@
                             font-size: $fs-4;
                             display: none;
                         }
+                        .color-name {
+                            text-align: center;
+                            font-size: 12px;
+                            font-weight: 600;
+                            color: #4d4d4d;
+                        }
                         &.active {
-                            border: 2px solid $color-red-0;
-                            border-radius: 3px;
+                            a{
+                                img{
+                                    border: 2px solid $color-red-0;
+                                    border-radius: 3px;
+                                }
+                            }
                             i {
                                 display: block;
                             }
@@ -319,10 +333,54 @@
                                     input {
                                     }
                                     .checkmark {
-                                        left: 10%;
                                     }
                                     .capacity__title {
-                                        margin-right: 10%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 375px) {
+        .product__detail {
+            .container-md {
+                .breadcrumb {
+                    .breadcrumb-item {
+                        a {
+                        }
+                        &.active {
+                        }
+                    }
+                }
+                .product__detail-content {
+                    .product_detail-title {
+                        .title__name {
+                        }
+                        .title__reviews {
+                            .star-rating {
+                            }
+                        }
+                    }
+                    .product_detail-page {
+                        .product_img {
+                            img {
+                            }
+                        }
+                        .product_price {
+                           
+                        }
+                        .product__capacity {
+                            justify-content: unset;
+                            .product__capacity-item {
+                                label {
+                                    input {
+                                    }
+                                    .checkmark {
+                                    }
+                                    .capacity__title {
                                     }
                                 }
                             }
@@ -365,10 +423,8 @@
                                     input {
                                     }
                                     .checkmark {
-                                        left: 7%;
                                     }
                                     .capacity__title {
-                                        margin-right: 7%;
                                     }
                                 }
                             }
@@ -411,10 +467,8 @@
                                     input {
                                     }
                                     .checkmark {
-                                        left: 4%;
                                     }
                                     .capacity__title {
-                                        margin-right: 4%;
                                     }
                                 }
                             }
@@ -431,7 +485,6 @@
                     .product_detail-page {
                         .product__capacity {
                             .product__capacity-card {
-                                flex-basis: 30%;
                             }
                         }
                     }
@@ -446,7 +499,6 @@
                     .product_detail-page {
                         .product__capacity {
                             .product__capacity-card {
-                                flex-basis: 25%;
                             }
                         }
                     }
@@ -507,18 +559,15 @@
                                 }
                                 .product__capacity {
                                     margin-bottom: 0;
-                                    padding-bottom: 0;
-                                    margin-left: -15px;
+                                    padding-bottom: 0;                                    
                                     .product__capacity-card {
                                         .product__capacity-item {
                                             label {
                                                 input {
                                                 }
                                                 .checkmark {
-                                                    left: 5%;
                                                 }
                                                 .capacity__title {
-                                                    margin-right: 8%;
                                                 }
                                             }
                                         }

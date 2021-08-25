@@ -3,19 +3,23 @@ const swiper0 = new Swiper('.selling_products', {
     loop: false,
     breakpoints: {
         320: {
-            slidesPerView: 2.3,
+            slidesPerView: 1.2,
             spaceBetween: 5,
         },
-        540: {
-            slidesPerView: 3.3,
+        400: {
+            slidesPerView: 2.2,
+            spaceBetween: 5,
+        },
+        640: {
+            slidesPerView: 3.2,
             spaceBetween: 5,
         },
         992: {
-            slidesPerView: 4.5,
+            slidesPerView: 4.2,
             spaceBetween: 5,
         },
         1024: {
-            slidesPerView: 4.5,
+            slidesPerView: 4.2,
             spaceBetween: 5,
         },
     },
@@ -52,12 +56,12 @@ const swiper1 = new Swiper('.product__photo-carousel', {
 });
 // ----------------------------------------------------------
 const swiper2 = new Swiper(".product__img-thumbs", {
-   
+
     slidesPerView: 3,
     freeMode: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
-  });
+});
 const swiper3 = new Swiper('.product__img', {
     // Optional parameters     
     loop: true,
@@ -74,5 +78,5 @@ const swiper3 = new Swiper('.product__img', {
     },
     thumbs: {
         swiper: swiper2,
-      },    
+    },
 });

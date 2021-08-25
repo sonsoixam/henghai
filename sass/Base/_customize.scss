@@ -2,6 +2,7 @@
 // Home Page
 .swiper-container.selling_products {
     overflow: hidden;
+    position: relative;
     .swiper-button-prev {
         left: 0;
         height: $hg-4;

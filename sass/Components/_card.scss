@@ -114,11 +114,14 @@
             }
             .card-body {
                 .card-text {
+                    font-size: 12px;
                 }
     
                 .card__memory-content {
                     .col-div {
+                        
                         .card__memory-item {
+                            
                             .memory-item {
                                 &.active {
                                 }
@@ -128,9 +131,7 @@
                 }
     
                 .card__color-content {
-                    .col-div {
-                        flex-basis: 33.333%;
-                        max-width: 33.33%;
+                    .col-div {                      
                         .card__color-item {
                             .item {
                                 img {
@@ -144,13 +145,16 @@
     
                 .card__price {
                     span {
+                        font-size: 13px;
                     }
                 }
                 .card__presents {
                     p {
+                        font-size: 10px;
                     }
                 }
                 .btn {
+                    font-size: 14px;
                 }
             }
         }
@@ -165,8 +169,7 @@
     
                 .card__memory-content {
                     .col-div {
-                        flex-basis: 50%;
-                        max-width: 50%;
+                        
                         .card__memory-item {
                             .memory-item {
                                 padding: 4px 12px 4px 12px;
@@ -213,8 +216,7 @@
     
                 .card__memory-content {
                     .col-div {
-                        flex-basis: 50%;
-                        max-width: 50%;
+                       
                         .card__memory-item {
                             .memory-item {
                                 padding: 4px 8px 4px 8px;
@@ -311,8 +313,7 @@
     
                 .card__memory-content {
                     .col-div {
-                        flex-basis: 25%;
-                        max-width: 25%;
+                       
                         .card__memory-item {
                             .memory-item {
                                 padding: 4px;
@@ -361,8 +362,8 @@
     
                 .card__memory-content {
                     .col-div {
-                        flex-basis: 33.33%;
-                        max-width: 33.33%;
+                        
+                        
                         .card__memory-item {
                             .memory-item {
                                
@@ -375,6 +376,7 @@
     
                 .card__color-content {
                     .col-div {
+                        
                         .card__color-item {
                             .item {
                                 img {
@@ -413,8 +415,7 @@
     
                 .card__memory-content {
                     .col-div {
-                        flex-basis: 33.33%;
-                        max-width: 33.33%;
+                       
                         .card__memory-item {
                             .memory-item {
                                padding: 4px 8px;
@@ -452,7 +453,7 @@
                 }
             }
         }
-    }
+    }  
     @media screen and (min-width: 720px) {
         .card {
             .card-img-top {
@@ -465,8 +466,7 @@
     
                 .card__memory-content {
                     .col-div {
-                        flex-basis: 25%;
-                        max-width: 25%;
+                        
                         .card__memory-item {
                             .memory-item {
                                padding: 4px 4px;
@@ -517,8 +517,7 @@
     
                 .card__memory-content {
                     .col-div {
-                        flex-basis: 33.33%;
-                        max-width: 33.33%;
+                        
                         .card__memory-item {
                             .memory-item {
                                padding: 4px 4px;

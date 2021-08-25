@@ -1,13 +1,32 @@
 .products__detail {
-    margin: $mg-2 + 4 $mg-1 - 2 0 $mg-1 - 2;
+    margin: $mg-1 $mg-1 - 2 0 $mg-1 - 2;
     padding: 0;
     .products__detail-content {
+        .breadcrumb {
+            background-color: transparent;
+            padding: 0;
+            font-size: $fs-2;
+            margin: 0 0 $mg-0 0;
+            padding: 0;
+            padding-bottom: 5px;
+            .breadcrumb-item {
+                a {
+                    color: $color-gray-1;
+                }
+                &.active {
+                    a{
+                        color: $color-red-0-pc;
+                    }
+                    
+                }
+            }
+        }
         .products__title {
             background: rgba(214, 39, 39, 0.05);
             color: $color-red-0-pc;
             padding: $pd-2 - 1;
             font-size: $fs-6;
-            text-align: center;           
+            text-align: center;
         }
         .section_pc {
             .products__list {
@@ -19,6 +38,13 @@
                             margin-top: $mg-1;
                             .card {
                                 background-color: $color-white-4-pc;
+                                .card__memory {
+                                    .card__memory-content {
+                                        > a {
+                                            display: none;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -29,8 +55,12 @@
 }
 
 @media screen and (min-width: 767.99px) {
-    .products__detail {        
+    .products__detail {
         .products__detail-content {
+            .breadcrumb {                
+                padding-bottom: 5px;
+                
+            }
             .products__title {
                 margin: 0;
                 margin-bottom: $mg-1;
@@ -43,12 +73,15 @@
     }
 }
 @media screen and (max-width: 767.99px) {
-    .products__detail {      
-        background-color: transparent; 
+    .products__detail {
+        background-color: transparent;
         .products__detail-content {
             padding: 0;
-            
-            .products__list{
+            .breadcrumb {                
+                padding-top: 5px;  
+                margin-bottom: 0;              
+            }
+            .products__list {
                 background-color: $color-white-0;
                 padding-bottom: $pd-1;
             }

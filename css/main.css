@@ -50,6 +50,7 @@
 
 .swiper-container.selling_products {
   overflow: hidden;
+  position: relative;
 }
 
 .swiper-container.selling_products .swiper-button-prev {
@@ -1222,27 +1223,27 @@
 }
 
 @media screen and (max-width: 767.98px) and (max-width: 400px) {
-  .card .card-body .card__color-content .col-div {
-    flex-basis: 33.333%;
-    max-width: 33.33%;
+  .card .card-body .card-text {
+    font-size: 12px;
+  }
+  .card .card-body .card__price span {
+    font-size: 13px;
+  }
+  .card .card-body .card__presents p {
+    font-size: 10px;
+  }
+  .card .card-body .btn {
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 767.98px) and (max-width: 370px) {
-  .card .card-body .card__memory-content .col-div {
-    flex-basis: 50%;
-    max-width: 50%;
-  }
   .card .card-body .card__memory-content .col-div .card__memory-item .memory-item {
     padding: 4px 12px 4px 12px;
   }
 }
 
 @media screen and (max-width: 767.98px) and (max-width: 345px) {
-  .card .card-body .card__memory-content .col-div {
-    flex-basis: 50%;
-    max-width: 50%;
-  }
   .card .card-body .card__memory-content .col-div .card__memory-item .memory-item {
     padding: 4px 8px 4px 8px;
   }
@@ -1262,10 +1263,6 @@
 }
 
 @media screen and (max-width: 767.98px) and (min-width: 480px) {
-  .card .card-body .card__memory-content .col-div {
-    flex-basis: 25%;
-    max-width: 25%;
-  }
   .card .card-body .card__memory-content .col-div .card__memory-item .memory-item {
     padding: 4px;
   }
@@ -1275,10 +1272,6 @@
   .card .card-body .card-text {
     font-size: 12px;
     line-height: 18px;
-  }
-  .card .card-body .card__memory-content .col-div {
-    flex-basis: 33.33%;
-    max-width: 33.33%;
   }
   .card .card-body .card__price span {
     font-size: 12px;
@@ -1292,10 +1285,6 @@
   .card .card-body .card-text {
     font-size: 12px;
     line-height: 18px;
-  }
-  .card .card-body .card__memory-content .col-div {
-    flex-basis: 33.33%;
-    max-width: 33.33%;
   }
   .card .card-body .card__memory-content .col-div .card__memory-item .memory-item {
     padding: 4px 8px;
@@ -1313,10 +1302,6 @@
     font-size: 12px;
     line-height: 18px;
   }
-  .card .card-body .card__memory-content .col-div {
-    flex-basis: 25%;
-    max-width: 25%;
-  }
   .card .card-body .card__memory-content .col-div .card__memory-item .memory-item {
     padding: 4px 4px;
   }
@@ -1332,10 +1317,6 @@
   .card .card-body .card-text {
     font-size: 12px;
     line-height: 18px;
-  }
-  .card .card-body .card__memory-content .col-div {
-    flex-basis: 33.33%;
-    max-width: 33.33%;
   }
   .card .card-body .card__memory-content .col-div .card__memory-item .memory-item {
     padding: 4px 4px;
@@ -1742,8 +1723,25 @@
 }
 
 .products__detail {
-  margin: 20px 8px 0 8px;
+  margin: 10px 8px 0 8px;
   padding: 0;
+}
+
+.products__detail .products__detail-content .breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  font-size: 12px;
+  margin: 0 0 5px 0;
+  padding: 0;
+  padding-bottom: 5px;
+}
+
+.products__detail .products__detail-content .breadcrumb .breadcrumb-item a {
+  color: #555555;
+}
+
+.products__detail .products__detail-content .breadcrumb .breadcrumb-item.active a {
+  color: #d62727;
 }
 
 .products__detail .products__detail-content .products__title {
@@ -1770,7 +1768,14 @@
   background-color: #fafafa;
 }
 
+.products__detail .products__detail-content .section_pc .products__list .row .products__list-item .products__item .card .card__memory .card__memory-content > a {
+  display: none;
+}
+
 @media screen and (min-width: 767.99px) {
+  .products__detail .products__detail-content .breadcrumb {
+    padding-bottom: 5px;
+  }
   .products__detail .products__detail-content .products__title {
     margin: 0;
     margin-bottom: 10px;
@@ -1787,6 +1792,10 @@
   }
   .products__detail .products__detail-content {
     padding: 0;
+  }
+  .products__detail .products__detail-content .breadcrumb {
+    padding-top: 5px;
+    margin-bottom: 0;
   }
   .products__detail .products__detail-content .products__list {
     background-color: #ffffff;
@@ -1851,8 +1860,7 @@
 }
 
 .product__detail .container-md .product__detail-content .product_detail-page .product_img a img {
-  max-width: 231px;
-  height: 231px;
+  max-width: 400px;
   cursor: inherit;
 }
 
@@ -1861,6 +1869,10 @@
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 16px;
+}
+
+.product__detail .container-md .product__detail-content .product_detail-page .product__capacity {
+  justify-content: space-between;
 }
 
 .product__detail .container-md .product__detail-content .product_detail-page .product__capacity .product__capacity-item {
@@ -1930,7 +1942,8 @@
 
 .product__detail .container-md .product__detail-content .product_detail-page .product__capacity .product__capacity-item label .capacity__title {
   font-weight: 500;
-  margin-right: 15%;
+  margin: 0 0 0 35px;
+  padding-right: 10px;
 }
 
 .product__detail .container-md .product__detail-content .product_detail-page .product__color {
@@ -1939,6 +1952,9 @@
 }
 
 .product__detail .container-md .product__detail-content .product_detail-page .product__color li {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   width: 42px;
   padding: 3px 0;
@@ -1954,7 +1970,14 @@
   display: none;
 }
 
-.product__detail .container-md .product__detail-content .product_detail-page .product__color li.active {
+.product__detail .container-md .product__detail-content .product_detail-page .product__color li .color-name {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #4d4d4d;
+}
+
+.product__detail .container-md .product__detail-content .product_detail-page .product__color li.active a img {
   border: 2px solid #cd1818;
   border-radius: 3px;
 }
@@ -2126,41 +2149,11 @@
   .product__detail .container-md .product__detail-content .product_detail-page .product_price {
     font-size: 20px;
   }
-  .product__detail .container-md .product__detail-content .product_detail-page .product__capacity .product__capacity-item label .checkmark {
-    left: 10%;
-  }
-  .product__detail .container-md .product__detail-content .product_detail-page .product__capacity .product__capacity-item label .capacity__title {
-    margin-right: 10%;
-  }
 }
 
-@media screen and (max-width: 767.98px) and (max-width: 360px) {
-  .product__detail .container-md .product__detail-content .product_detail-page .product__capacity .product__capacity-item label .checkmark {
-    left: 7%;
-  }
-  .product__detail .container-md .product__detail-content .product_detail-page .product__capacity .product__capacity-item label .capacity__title {
-    margin-right: 7%;
-  }
-}
-
-@media screen and (max-width: 767.98px) and (max-width: 340px) {
-  .product__detail .container-md .product__detail-content .product_detail-page .product__capacity .product__capacity-item label .checkmark {
-    left: 4%;
-  }
-  .product__detail .container-md .product__detail-content .product_detail-page .product__capacity .product__capacity-item label .capacity__title {
-    margin-right: 4%;
-  }
-}
-
-@media screen and (max-width: 767.98px) and (min-width: 470px) and (max-width: 529px) {
-  .product__detail .container-md .product__detail-content .product_detail-page .product__capacity .product__capacity-card {
-    flex-basis: 30%;
-  }
-}
-
-@media screen and (max-width: 767.98px) and (min-width: 520px) and (max-width: 575.98px) {
-  .product__detail .container-md .product__detail-content .product_detail-page .product__capacity .product__capacity-card {
-    flex-basis: 25%;
+@media screen and (max-width: 767.98px) and (max-width: 375px) {
+  .product__detail .container-md .product__detail-content .product_detail-page .product__capacity {
+    justify-content: unset;
   }
 }
 
@@ -2203,13 +2196,6 @@
   .product__detail .container-md .section_pc .product__detail-content .product_detail-page .row .product_detail-right .product__capacity {
     margin-bottom: 0;
     padding-bottom: 0;
-    margin-left: -15px;
-  }
-  .product__detail .container-md .section_pc .product__detail-content .product_detail-page .row .product_detail-right .product__capacity .product__capacity-card .product__capacity-item label .checkmark {
-    left: 5%;
-  }
-  .product__detail .container-md .section_pc .product__detail-content .product_detail-page .row .product_detail-right .product__capacity .product__capacity-card .product__capacity-item label .capacity__title {
-    margin-right: 8%;
   }
   .product__detail .container-md .section_pc .product__detail-content .product_detail-page .row .product_detail-right .contact {
     background-color: rgba(214, 39, 39, 0.8);
