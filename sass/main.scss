@@ -11,10 +11,6 @@
     
 //Layouts
 @import './Layouts/header';
-
-@import './Layouts/banner';
-@import './Layouts/categories';
-@import './Layouts/sellingProducts';
 @import './Layouts/footer';
 @import './Layouts/modal';
 
@@ -25,4 +21,6 @@
 @import './Components/responsive';
 //Pages
 @import './Pages/home';
+@import './Pages/productsList';
+@import './Pages/productsDetail';
 

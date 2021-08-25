@@ -3,7 +3,7 @@
 window.onscroll = function () {
     //Code tạo hiệu ứng xuất hiện thanh màu đen khi scroll
     if (window.screen.width < 767.98) {
-        if (document.body.scrollTop > 165 || document.documentElement.scrollTop > 165) {
+        if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
             // translate(-50%,0)
             document.getElementById("headerFixed").style.transform = "translate(0,0)";
             document.getElementById("headerStandard").style.display = "none";
@@ -24,10 +24,10 @@ window.onscroll = function () {
         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
             // translate(-50%,0)
             document.getElementById("headerFixed_PC").style.transform = "translate(0,0)";
-            document.getElementById("hederStandard_PC").style.display = "none";
+            document.getElementById("headerStandard_PC").style.display = "none";
         } else {
             document.getElementById("headerFixed_PC").style.transform = "translate(0,-100%)";
-            document.getElementById("hederStandard_PC").style.display = "block";
+            document.getElementById("headerStandard_PC").style.display = "block";
         }
     }
 

@@ -25,6 +25,14 @@
     <!-- SWIPER CAROUSEL -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
+    <!-- EASYZOOM -->
+    <link rel="stylesheet" href="./css/easyzoom/easyzoom.css">
+    <link rel="stylesheet" href="./css/easyzoom/example.css">
+    <link rel="stylesheet" href="./css/easyzoom/pygments.css">
+
+    <!-- LIGHT BOX -->
+    <link href="./css/lightbox.min.css" rel="stylesheet" />
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -32,7 +40,7 @@
 <body>
     <!-- HEADER -->
     <header id="headerStandard">
-        <div class="headertop header__top">            
+        <div class="headertop header__top">
             <div class="row align-items-center d-md-none">
                 <div class="col-2">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -52,7 +60,7 @@
                     </div>
                 </div>
             </div>
-        </div>        
+        </div>
         <form class="header__search d-md-none">
             <div class="input-group">
                 <input id="search2" type="text" class="form-control input-searchStandard" placeholder="Bạn cần tìm gì">
@@ -1741,913 +1749,452 @@
         </div>
     </header>
     <div class="body__content">
-        <!-- BANNER  -->
-        <section class="banner">
-            <div class="owl-carousel owl-theme banner__carousel d-md-none">
-                <div class="item">
-                    <a href="#"><img class="d-block w-100" src="./img/Image_1.png" alt="banner1"></a>
-                </div>
-                <div class="item">
-                    <a href="#"><img class="d-block w-100" src="./img/Image_1.png" alt="banner2"></a>
-                </div>
-                <div class="item">
-                    <a href="#"><img class="d-block w-100" src="./img/Image_1.png" alt="banner3"></a>
-                </div>
-                <div class="item">
-                    <a href="#"><img class="d-block w-100" src="./img/Image_1.png" alt="banner4"></a>
-                </div>
-                <div class="item">
-                    <a href="#"><img class="d-block w-100" src="./img/Image_1.png" alt="banner5"></a>
-                </div>
-                <div class="item">
-                    <a href="#"><img class="d-block w-100" src="./img/Image_1.png" alt="banner6"></a>
-                </div>
-            </div>
-            <div class="container responsive">
-                <div class="row">
-                    <div class="banner__left col-md-7">
-                        <div class="owl-carousel owl-theme banner__carousel">
-                            <div class="item">
-                                <a href="https://hoanghaimobile.jp/san-pham/iphone-12-pro-max-quoc-te-chinh-hang"><img
-                                        src="./img/banner1.jpg" alt="banner_1"></a>
-                            </div>
-                            <div class="item"><a
-                                    href="https://hoanghaimobile.jp/san-pham/tai-nghe-airpod-2-hop-sac-thuong-chinh-hang"><img
-                                        src="./img/banner2.jpg" alt="banner_2"></a>
-                            </div>
-                            <div class="item"><a href="#">
-                                    <img src="./img/banner3.jpg" alt="banner_1">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="banner__right col-md-5">
-                        <div class="banner__right__thumbnail">
-                            <div class="banner__right-content row">
-                                <div class="col-12">
-                                    <a href="#">
-                                        <img class="img-fluid" src="./img/4.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="pr-0 col-6">
-                                    <a href="">
-                                        <img class="img-fluid" src="./img/Artboard-18300.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="pl-0 col-6">
-                                    <a href="">
-                                        <img class="img-fluid" src="./img/Artboard-19300.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- CATEGORIES -->
-        <section class="categories section d-md-none">
-            <div class="categories__content">
-                <div class="row">
-                    <div class="col-3">
-                        <div class="categories__item">
-                            <a href="#">
-                                <img alt="IPhone" src="./img/IPhone.png">
-                            </a>
-                            <span class="categories__title">Iphone</span>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="categories__item">
-                            <a href="#">
-                                <img alt="IPad" src="./img/IPad.png">
-                            </a>
-                            <span class="categories__title">IPad</span>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="categories__item">
-                            <a href="#">
-                                <img alt="AppleWatch" src="./img/AppleWatch.png">
-                            </a>
-                            <span class="categories__title">AppleWatch</span>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="categories__item">
-                            <a href="#">
-                                <img alt="AirPod" src="./img/AirPod.png">
-                            </a>
-                            <span class="categories__title">AirPod</span>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="categories__item">
-                            <a href="#">
-                                <img alt="MacBook" src="./img/MacBook.png">
-                            </a>
-                            <span class="categories__title">MacBook</span>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="categories__item">
-                            <a href="#">
-                                <img alt="SimData" src="./img/SimData.png">
-                            </a>
-                            <span class="categories__title">SimData</span>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="categories__item">
-                            <a href="#">
-                                <img alt="Wifi" src="./img/Wifi.png">
-                            </a>
-                            <span class="categories__title">Wifi Cầm Tay</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- SELLING IPHONE PRODUCTS  -->
-        <section class="products iphone section">
-            <div class="products__content container-md">
+        <!-- PRODUCTS DETAIL -->
+        <main class="product__detail">
+            <div class="container-md">
                 <div class="section_pc">
-                    <div class="products__title mb-md-2 d-lg-flex justify-content-between align-items-center">
-                        <p class="products__title products__title_cotent">IPhone Bán Chạy Nhất</p>
-                        <ul class="nav nav-tabs list__iphone" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-subcategory="iphone12" data-toggle="tab"
-                                    href="#iphone12" role="tab">IPhone 12</a>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="https://hoanghaimobile.jp">Trang chủ</a></li>
+                            <li class="breadcrumb-item"><a href="https://hoanghaimobile.jp/chuyen-muc/iphone">iPhone</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-subcategory="iphone11" data-toggle="tab" href="#iphone11"
-                                    role="tab">Iphone
-                                    11</a>
+                            <li class="breadcrumb-item"><a
+                                    href="https://hoanghaimobile.jp/model/iphone-12-pro-max">iPhone
+                                    12 Pro Max</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">iPhone 12 Pro Max Quốc Tế Chính Hãng
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-subcategory="iphoneX" data-toggle="tab" href="#iphoneX"
-                                    role="tab">IPhone
-                                    X</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-subcategory="iphone8" data-toggle="tab" href="#iphone8"
-                                    role="tab">IPhone
-                                    8</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-subcategory="iphone7" data-toggle="tab" href="#iphone7"
-                                    role="tab">IPhone
-                                    7</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-subcategory="iphone6" data-toggle="tab" href="#iphone6"
-                                    role="tab">IPhone
-                                    6</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-subcategory="oldIphone" data-toggle="tab" href="#oldIPhone"
-                                    role="tab">Máy Cũ
-                                    Giá Rẻ</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-content">
-                        <div class="tab-pane fade show active" id="iphone12" role="tabpanel" aria-labelledby="iphone12">
-                            <div class="swiper-container selling_products">
-                                <div class="swiper-wrapper">
-                                    <div data-id="iphone12_1" class="card swiper-slide">
-                                        <img src="./img/ImgCard_IPhone12ProMax.png" class="card-img-top" alt="CardNo1">
-                                        <div class="card-body">
-                                            <div class="">
-                                                <p class="card-text">iPhone 12 Pro Max Quốc Tế
-                                                    Chính Hãng 1</p>
-                                            </div>
-                                            <div class="card__memory">
-                                                <ul class="row card__memory-content">
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="128" class="card__memory-item"><a
-                                                                class="memory-item active" href="#">128 GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="256" class="card__memory-item"><a
-                                                                class="memory-item" href="#">256
-                                                                GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="512" class="card__memory-item"><a
-                                                                class="memory-item" href="#">512
-                                                                GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="1024" class="card__memory-item"><a
-                                                                class="memory-item" href="#">1 TB
-                                                            </a></li>
-                                                    </div>
-                                                </ul>
-                                            </div>
-                                            <div class="card__color">
-                                                <ul class="row card__color-content">
-                                                    <div class="col-div col-3">
-                                                        <li data-color="blue" class="card__color-item">
-                                                            <a class="item" href="#">
-                                                                <img class="active" src="./img/Color_Blue.png"
-                                                                    alt="blue">
-                                                            </a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="silver" class="card__color-item">
-                                                            <a class="item" href="#"><img src="./img/Color_Silver.png"
-                                                                    alt="silver"></a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="gray" class="card__color-item">
-                                                            <a class="item" href="#"><img src="./img/Color_Gray.png"
-                                                                    alt="gray"></a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="gold" class="card__color-item"><a class="item"
-                                                                href="#"><img src="./img/Color_Gold.png" alt="gold"></a>
-                                                        </li>
-                                                    </div>
-                                                </ul>
-                                            </div>
-                                            <div class="card__price">
-                                                <span>10.000¥</span>
-                                            </div>
-                                            <div class="card__presents">
-                                                <p>Tặng mã giảm giá RTYH trị giá 1.000 ¥</p>
-                                                <p>Tặng ốp cường lực con voi</p>
-                                            </div>
-                                            <button class="btn w-100">Mua Ngay</button>
-                                        </div>
-                                    </div>
-                                    <div data-id="iphone12_2" class="card swiper-slide">
-                                        <img src="./img/ImgCard_IPhone12ProMax.png" class="card-img-top" alt="CardNo1">
-                                        <div class="card-body">
-                                            <div class="">
-                                                <p class="card-text">iPhone 12 Pro Max Quốc Tế
-                                                    Chính Hãng 1</p>
-                                            </div>
-                                            <div class="card__memory">
-                                                <ul class="row card__memory-content">
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="128" class="card__memory-item"><a
-                                                                class="memory-item active" href="#">128 GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="256" class="card__memory-item"><a
-                                                                class="memory-item" href="#">256
-                                                                GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="512" class="card__memory-item"><a
-                                                                class="memory-item" href="#">512
-                                                                GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="1024" class="card__memory-item"><a
-                                                                class="memory-item" href="#">1 TB
-                                                            </a></li>
-                                                    </div>
-                                                </ul>
-                                            </div>
-                                            <div class="card__color">
-                                                <ul class="row card__color-content">
-                                                    <div class="col-div col-3">
-                                                        <li data-color="blue" class="card__color-item">
-                                                            <a class="item" href="#">
-                                                                <img class="active" src="./img/Color_Blue.png"
-                                                                    alt="blue">
-                                                            </a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="silver" class="card__color-item">
-                                                            <a class="item" href="#"><img src="./img/Color_Silver.png"
-                                                                    alt="silver"></a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="gray" class="card__color-item">
-                                                            <a class="item" href="#"><img src="./img/Color_Gray.png"
-                                                                    alt="gray"></a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="gold" class="card__color-item"><a class="item"
-                                                                href="#"><img src="./img/Color_Gold.png" alt="gold"></a>
-                                                        </li>
-                                                    </div>
-                                                </ul>
-                                            </div>
-                                            <div class="card__price">
-                                                <span>10.000¥</span>
-                                            </div>
-                                            <div class="card__presents">
-                                                <p>Tặng mã giảm giá RTYH trị giá 1.000 ¥</p>
-                                                <p>Tặng ốp cường lực con voi</p>
-                                            </div>
-                                            <button class="btn w-100">Mua Ngay</button>
-                                        </div>
-                                    </div>
-                                    <div data-id="iphone12_3" class="card swiper-slide">
-                                        <img src="./img/ImgCard_IPhone12ProMax.png" class="card-img-top" alt="CardNo1">
-                                        <div class="card-body">
-                                            <div class="">
-                                                <p class="card-text">iPhone 12 Pro Max Quốc Tế
-                                                    Chính Hãng 1</p>
-                                            </div>
-                                            <div class="card__memory">
-                                                <ul class="row card__memory-content">
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="128" class="card__memory-item"><a
-                                                                class="memory-item active" href="#">128 GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="256" class="card__memory-item"><a
-                                                                class="memory-item" href="#">256
-                                                                GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="512" class="card__memory-item"><a
-                                                                class="memory-item" href="#">512
-                                                                GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="1024" class="card__memory-item"><a
-                                                                class="memory-item" href="#">1 TB
-                                                            </a></li>
-                                                    </div>
-                                                </ul>
-                                            </div>
-                                            <div class="card__color">
-                                                <ul class="row card__color-content">
-                                                    <div class="col-div col-3">
-                                                        <li data-color="blue" class="card__color-item">
-                                                            <a class="item" href="#">
-                                                                <img class="active" src="./img/Color_Blue.png"
-                                                                    alt="blue">
-                                                            </a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="silver" class="card__color-item">
-                                                            <a class="item" href="#"><img src="./img/Color_Silver.png"
-                                                                    alt="silver"></a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="gray" class="card__color-item">
-                                                            <a class="item" href="#"><img src="./img/Color_Gray.png"
-                                                                    alt="gray"></a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="gold" class="card__color-item"><a class="item"
-                                                                href="#"><img src="./img/Color_Gold.png" alt="gold"></a>
-                                                        </li>
-                                                    </div>
-                                                </ul>
-                                            </div>
-                                            <div class="card__price">
-                                                <span>10.000¥</span>
-                                            </div>
-                                            <div class="card__presents">
-                                                <p>Tặng mã giảm giá RTYH trị giá 1.000 ¥</p>
-                                                <p>Tặng ốp cường lực con voi</p>
-                                            </div>
-                                            <button class="btn w-100">Mua Ngay</button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="swiper-button-prev">
-                                    <i class="fa fa-chevron-left"></i>
-                                </div>
-                                <div class="swiper-button-next">
-                                    <i class="fa fa-chevron-right"></i>
-                                </div>
+                        </ol>
+                    </nav>
+                    <div class="product__detail-content section">
+                        <div class="product_detail-title">
+                            <h1 class="title__name">IPhone 12 Pro Max Quốc Tế Chính Hãng</h1>
+                            <div class="title__reviews">
+                                <span class="star-rating">
+                                    <span style="width: 90%"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                            class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                            class="fa fa-star-half-alt"></i></i></span>
+                                </span>
+                                Đánh giá 4.7/5 dựa trên ý kiến khách hàng
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="iphone11" role="tabpanel" aria-labelledby="iphone11">
+                        <div class="product_detail-page">
+                            <!-- IPhone type detail -->
+                            <div class="iphoneTag d-block">
+                                <div class="row">
+                                    <div class="easyzoom easyzoom--with-thumbnails product_img col-12 col-md-6">
+                                        <a href="./img/Color_Blue.png">
+                                            <img class="img-fluid" src="./img/Color_Blue.png" alt="" />
+                                        </a>
+                                    </div>
+                                    <!-- PC version -->
+                                    <div class="product_detail-right d-none d-md-block col-6">
+                                        <p class="product_price">30.000 ¥ <small>( khoảng 30.000.000 đ )</small> </p>
+                                        <div data-id="iphone12_1" class="row w-100 product__capacity">
+                                            <div class="product__capacity-card col-4 col-lg-3">
+                                                <div class="product__capacity-item mb-lg-0">
+                                                    <label class="">
+                                                        <input data-capacity="128" class="product__capacity-detail"
+                                                            type="radio" checked="checked" name="capacity-group-pc">
+                                                        <span class="checkmark"></span>
+                                                        <span class="capacity__title">128GB</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="product__capacity-card col-4 col-lg-3">
+                                                <div class="product__capacity-item mb-lg-0">
+                                                    <label>
+                                                        <input data-capacity="256" class="product__capacity-detail"
+                                                            type="radio" name="capacity-group-pc">
+                                                        <span class="checkmark"></span>
+                                                        <span class="capacity__title">256GB</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="product__capacity-card col-4 col-lg-3">
+                                                <div class="product__capacity-item mb-lg-0">
+                                                    <label>
+                                                        <input data-capacity="512" class="product__capacity-detail"
+                                                            type="radio" name="capacity-group-pc">
+                                                        <span class="checkmark"></span>
+                                                        <span class="capacity__title">512GB</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="product__capacity-card col-4 col-lg-3">
+                                                <div class="product__capacity-item mb-lg-0">
+                                                    <label>
+                                                        <input data-capacity="1024" class="product__capacity-detail"
+                                                            type="radio" name="capacity-group-pc">
+                                                        <span class="checkmark"></span>
+                                                        <span class="capacity__title">1024GB</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="thumbnails product__color product__color-PC">
+                                            <li data-color="blue" class="product__color-item active">
+                                                <i class="fa fa-check"></i>
+                                                <a href="./img/Color_Blue.png" data-standard="./img/Color_Blue.png">
+                                                    <img src="./img/Color_Blue.png" alt="" />
+                                                </a>
+                                            </li>
+                                            <li data-color="silver" class="product__color-item">
+                                                <i class="fa fa-check"></i>
+                                                <a href="./img/Color_Silver.png" data-standard="./img/Color_Silver.png">
+                                                    <img src="./img/Color_Silver.png" alt="" />
+                                                </a>
+                                            </li>
+                                            <li data-color="gray" class="product__color-item">
+                                                <i class="fa fa-check"></i>
+                                                <a href="./img/Color_Gray.png" data-standard="./img/Color_Gray.png">
+                                                    <img src="./img/Color_Gray.png" alt="" />
+                                                </a>
+                                            </li>
+                                            <li data-color="gold" class="product__color-item">
+                                                <i class="fa fa-check"></i>
+                                                <a href="./img/Color_Gold.png" data-standard="./img/Color_Gold.png">
+                                                    <img src="./img/Color_Gold.png" alt="" />
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="product__present">
+                                            <h1 class="product__present-title d-inline-block">
+                                                Khuyến Mại
+                                            </h1>
+                                            <div class="product__present-content">
+                                                <div class="product__present-item mb-2">
+                                                    <i class="fa fa-check-square"></i>
+                                                    <span class="present-item-detail">Tặng ốp cường lực con voi</span>
+                                                </div>
+                                                <div class="product__present-item">
+                                                    <i class="fa fa-check-square"></i>
+                                                    <span class="present-item-detail">Tặng mã giảm giá <span
+                                                            class="present-item-discount">HG54TF</span> trị giá 1.700
+                                                        ¥</span>
+                                                </div>
+                                                <div class="product__present-note">
+                                                    <span>
+                                                        Chú ý : Mã giảm giá chỉ có hiệu lực đến hết ngày 31/7/2021
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="contact btn">Liên Hệ Shop</button>
+                                    </div>
+                                </div>
+                                <!-- Tablet version -->
+                                <p class="product_price d-md-none">30.000 ¥ ( khoảng 30.000.000 đ )</p>
+                                <div data-id="iphone12_1" class="product__capacity row w-100 d-md-none">
+                                    <div class="product__capacity-card col-4 col-sm-3">
+                                        <div class="product__capacity-item">
+                                            <label class="">
+                                                <input data-capacity="128" class="product__capacity-detail" type="radio"
+                                                    checked="checked" name="capacity-group">
+                                                <span class="checkmark"></span>
+                                                <span class="capacity__title">128GB</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="product__capacity-card col-4 col-sm-3">
+                                        <div class="product__capacity-item">
+                                            <label>
+                                                <input data-capacity="256" class="product__capacity-detail" type="radio"
+                                                    name="capacity-group">
+                                                <span class="checkmark"></span>
+                                                <span class="capacity__title">256GB</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="product__capacity-card col-4 col-sm-3">
+                                        <div class="product__capacity-item">
+                                            <label>
+                                                <input data-capacity="512" class="product__capacity-detail" type="radio"
+                                                    name="capacity-group">
+                                                <span class="checkmark"></span>
+                                                <span class="capacity__title">512GB</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="product__capacity-card col-4 col-sm-3">
+                                        <div class="product__capacity-item">
+                                            <label>
+                                                <input data-capacity="1024" class="product__capacity-detail"
+                                                    type="radio" name="capacity-group">
+                                                <span class="checkmark"></span>
+                                                <span class="capacity__title">1024GB</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="product__color product__color-Tablet thumbnails d-md-none">
+                                    <li data-color="blue" class="product__color-item active">
+                                        <i class="fa fa-check"></i>
+                                        <a href="./img/Color_Blue.png" data-standard="./img/Color_Blue.png">
+                                            <img src="./img/Color_Blue.png" alt="" />
+                                        </a>
+                                    </li>
+                                    <li data-color="silver" class="product__color-item">
+                                        <i class="fa fa-check"></i>
+                                        <a href="./img/Color_Silver.png" data-standard="./img/Color_Silver.png">
+                                            <img src="./img/Color_Silver.png" alt="" />
+                                        </a>
+                                    </li>
+                                    <li data-color="gray" class="product__color-item">
+                                        <i class="fa fa-check"></i>
+                                        <a href="./img/Color_Gray.png" data-standard="./img/Color_Gray.png">
+                                            <img src="./img/Color_Gray.png" alt="" />
+                                        </a>
+                                    </li>
+                                    <li data-color="gold" class="product__color-item">
+                                        <i class="fa fa-check"></i>
+                                        <a href="./img/Color_Gold.png" data-standard="./img/Color_Gold.png">
+                                            <img src="./img/Color_Gold.png" alt="" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- IPod type detail -->
+                            <div class="ipodTag d-none">
+                                <div class="row">
+                                    <div class="ipodTag__product col-12 col-md-6 mb-4 mb-md-0 pb-3 pb-md-0">
+                                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                            class="swiper-container product__img">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="./img/IPod_type.png" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/IPod_type.png" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/IPod_type.png" />
+                                                </div>
+                                            </div>
+                                            <div class="swiper-button-prev">
+                                                <i class="fa fa-chevron-left"></i>
+                                            </div>
+                                            <div class="swiper-button-next">
+                                                <i class="fa fa-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                        <div thumbsSlider="" class="swiper-container product__img-thumbs">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="./img/IPodType_Silde1.png" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/IPodType_Silde2.png" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/IPodType_Silde3.png" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                        </div>
-                        <div class="tab-pane fade" id="iphoneX" role="tabpanel" aria-labelledby="iphoneX">
+                                    <!-- PC version -->
+                                    <div class="product_detail-right d-none d-md-block col-6">
+                                        <p class="product_price">30.000 ¥ <small>( khoảng 30.000.000 đ )</small> </p>
 
-                        </div>
-                        <div class="tab-pane fade" id="iphone8" role="tabpanel" aria-labelledby="iphone8">
+                                        <div class="product__present">
+                                            <h1 class="product__present-title d-inline-block">
+                                                Khuyến Mại
+                                            </h1>
+                                            <div class="product__present-content">
+                                                <div class="product__present-item mb-2">
+                                                    <i class="fa fa-check-square"></i>
+                                                    <span class="present-item-detail">Tặng ốp cường lực con voi</span>
+                                                </div>
+                                                <div class="product__present-item">
+                                                    <i class="fa fa-check-square"></i>
+                                                    <span class="present-item-detail">Tặng mã giảm giá <span
+                                                            class="present-item-discount">HG54TF</span> trị giá 1.700
+                                                        ¥</span>
+                                                </div>
+                                                <div class="product__present-note">
+                                                    <span>
+                                                        Chú ý : Mã giảm giá chỉ có hiệu lực đến hết ngày 31/7/2021
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="contact btn">Liên Hệ Shop</button>
+                                    </div>
+                                </div>
+                                <!-- Tablet version -->
+                                <p class="product_price d-md-none">30.000 ¥ ( khoảng 30.000.000 đ )</p>
 
-                        </div>
-                        <div class="tab-pane fade" id="iphone7" role="tabpanel" aria-labelledby="iphone7">
-
-                        </div>
-                        <div class="tab-pane fade" id="iphone6" role="tabpanel" aria-labelledby="iphone6">
-
-                        </div>
-                        <div class="tab-pane fade" id="oldIPhone" role="tabpanel" aria-labelledby="oldIPhone">
-
+                            </div>
+                            <!-- Common info -->
+                            <div class="product__present d-md-none">
+                                <h1 class="product__present-title d-inline-block">
+                                    Khuyến Mại
+                                </h1>
+                                <div class="product__present-content">
+                                    <div class="product__present-item mb-2">
+                                        <i class="fa fa-check-square"></i>
+                                        <span class="present-item-detail">Tặng ốp cường lực con voi</span>
+                                    </div>
+                                    <div class="product__present-item">
+                                        <i class="fa fa-check-square"></i>
+                                        <span class="present-item-detail">Tặng mã giảm giá <span
+                                                class="present-item-discount">HG54TF</span> trị giá 1.700 ¥</span>
+                                    </div>
+                                    <div class="product__present-note">
+                                        <span>
+                                            Chú ý : Mã giảm giá chỉ có hiệu lực đến hết ngày 31/7/2021
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="contact btn d-md-none">Liên Hệ Shop</button>
+                            <div class="product__photo">
+                                <div class="product__photo-title">
+                                    HÌNH ẢNH THỰC TẾ:
+                                </div>
+                                <div class="photo-content">
+                                    <div class="swiper-container product__photo-carousel">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="./img/Color_Blue.png" data-lightbox="productPhoto">
+                                                    <img class="img-fluid" src="./img/Color_Blue.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./img/Color_Silver.png" data-lightbox="productPhoto">
+                                                    <img class="img-fluid" src="./img/Color_Silver.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./img/Color_Gray.png" data-lightbox="productPhoto">
+                                                    <img class="img-fluid" src="./img/Color_Gray.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./img/Color_Gold.png" data-lightbox="productPhoto">
+                                                    <img class="img-fluid" src="./img/Color_Gold.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./img/Color_Blue.png" data-lightbox="productPhoto">
+                                                    <img class="img-fluid" src="./img/Color_Blue.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./img/Color_Gold.png" data-lightbox="productPhoto">
+                                                    <img class="img-fluid" src="./img/Color_Gold.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./img/Color_Silver.png" data-lightbox="productPhoto">
+                                                    <img class="img-fluid" src="./img/Color_Silver.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <i class="fa fa-chevron-left"></i>
+                                        </div>
+                                        <div class="swiper-button-next">
+                                            <i class="fa fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__accessory">
+                                <h1 class="accessory-title">
+                                    PHỤ KIỆN ĐI KÈM:
+                                </h1>
+                                <div class="accessory-content">
+                                    <div class="accessories-item">
+                                        <img class="accessories-img" src="./img/AirPod.png" alt="accessories-img">
+                                        <div class="accessoies-detail">
+                                            <p>iPhone 12 Pro Max Quốc Tế Chính Hãng</p>
+                                            <span>30.000 ¥ ( khoảng 30.000.000 đ )</span>
+                                        </div>
+                                    </div>
+                                    <div class="accessories-item">
+                                        <img class="accessories-img" src="./img/AirPod.png" alt="accessories-img">
+                                        <div class="accessoies-detail">
+                                            <p>iPhone 12 Pro Max Quốc Tế Chính Hãng</p>
+                                            <span>30.000 ¥ ( khoảng 30.000.000 đ )</span>
+                                        </div>
+                                    </div>
+                                    <div class="accessories-item">
+                                        <img class="accessories-img" src="./img/AirPod.png" alt="accessories-img">
+                                        <div class="accessoies-detail">
+                                            <p>iPhone 12 Pro Max Quốc Tế Chính Hãng</p>
+                                            <span>30.000 ¥ ( khoảng 30.000.000 đ )</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__feature">
+                                <div class="feature-title">
+                                    ĐẶC ĐIỂM NỔI BẬT:
+                                </div>
+                                <div class="feature-content">
+                                    <h1>
+                                        Đặc điểm nổi bật của iPhone 12 Pro Max
+                                    </h1>
+                                    <h3>
+                                        “Trùm cuối” của dòng iPhone 12 đã xuất hiện. iPhone 12 Pro Max là chiếc iPhone
+                                        có màn hình lớn nhất từ trước đến nay, mang trên mình bộ vi xử lý mạnh nhất,
+                                        camera đẳng cấp pro cùng kết nối 5G siêu tốc, cho bạn những trải nghiệm tuyệt
+                                        vời chưa từng có.
+                                    </h3>
+                                    <img class="img-fluid"
+                                        src="https://fptshop.com.vn/Uploads/images/2015/Tin-Tuc/QuanLNH2/iphone-12-pro-max-3.JPG"
+                                        data-mce-src="https://fptshop.com.vn/Uploads/images/2015/Tin-Tuc/QuanLNH2/iphone-12-pro-max-3.JPG">
+                                    <h2>
+                                        Chiếc iPhone màn hình lớn nhất
+                                    </h2>
+                                    <p>
+                                        iPhone 12 Pro Max sở hữu màn hình kích thước khó tin, lên tới 6,7 inch, cho bạn
+                                        trải nghiệm hình ảnh cực đã. Chất lượng đến từ một màn hình công nghệ Super
+                                        Retina XDR, tấm nền OLED cao cấp và độ phân giải siêu cao thực sự quá tuyệt vời.
+                                        <img class="img-fluid"
+                                            src="https://fptshop.com.vn/Uploads/images/2015/Tin-Tuc/QuanLNH2/iphone-12-pro-max-2.JPG"
+                                            data-mce-src="https://fptshop.com.vn/Uploads/images/2015/Tin-Tuc/QuanLNH2/iphone-12-pro-max-2.JPG">
+                                        Mọi thứ đều trở nên sống động trên iPhone 12 Pro Max, đặc biệt khi bạn xem ảnh,
+                                        xem phim hay chơi game. Còn bất ngờ hơn khi dù màn hình lớn hơn, nhưng iPhone 12
+                                        Pro Max vẫn gọn gàng như thế hệ trước nhờ viền màn hình được tối ưu siêu mỏng
+                                        đầy tinh tế.
+                                    </p>
+                                    <h2>
+                                        Màn hình siêu bền, giảm nguy cơ trầy xước rơi vỡ
+                                    </h2>
+                                    <p>
+                                        Không chỉ có một màn hình đẹp xuất sắc, màn hình iPhone 12 Pro Max còn được bảo
+                                        vệ bởi công nghệ phủ gốm Ceramic Shield. Công nghệ này sử dụng các tinh thể gốm
+                                        nano cứng hơn cả kim loại để tấm kính có khả năng chống xước cao hơn và bền hơn
+                                        tới 4 lần nếu chẳng may điện thoại bị rơi. Đây cũng là lớp kính màn hình cứng
+                                        nhất thế giới smartphone hiện nay, cho bạn cảm giác yên tâm khi sử dụng.
+                                        <img class="img-fluid"
+                                            src="https://fptshop.com.vn/Uploads/images/2015/Tin-Tuc/QuanLNH2/iphone-12-pro-max-1.JPG"
+                                            data-mce-src="https://fptshop.com.vn/Uploads/images/2015/Tin-Tuc/QuanLNH2/iphone-12-pro-max-1.JPG">
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- SELLING IPAD PRODUCTS -->
-        <section class="products ipad section">
-            <div class="products__content container-md">
-                <div class="section_pc">
-                    <div class="products__title mb-md-2 d-lg-flex justify-content-between align-items-center">
-                        <p class="products__title products__title_cotent">IPad Bán Chạy Nhất</p>
-                        <ul class="nav nav-tabs list_ipad" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#ipad1" role="tab">IPad 1</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#ipad2" role="tab">IPad 2</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#ipad3" role="tab">IPad 3</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#ipad4" role="tab">IPad 4</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#ipad5" role="tab">IPad 5</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#ipad6" role="tab">IPad 6</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#ipad7" role="tab">IPad 7</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-content">
-                        <div class="tab-pane fade show active" id="ipad1" role="tabpanel" aria-labelledby="iphone12">
-                            <div class="swiper-container selling_products">
-                                <div class="swiper-wrapper">
-                                    <div data-id="ipad_1" class="card swiper-slide">
-                                        <img src="./img/ImgCard_IPhone12ProMax.png" class="card-img-top" alt="CardNo1">
-                                        <div class="card-body">
-                                            <div class="">
-                                                <p class="card-text">iPad 1 Chính Hãng</p>
-                                            </div>
-                                            <div class="card__memory">
-                                                <ul class="row card__memory-content">
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="128" class="card__memory-item"><a
-                                                                class="memory-item active" href="#">128 GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="256" class="card__memory-item"><a
-                                                                class="memory-item" href="#">256
-                                                                GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="512" class="card__memory-item"><a
-                                                                class="memory-item" href="#">512
-                                                                GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="1024" class="card__memory-item"><a
-                                                                class="memory-item" href="#">1 TB
-                                                            </a></li>
-                                                    </div>
-                                                </ul>
-                                            </div>
-                                            <div class="card__color">
-                                                <ul class="row card__color-content">
-                                                    <div class="col-div col-3">
-                                                        <li data-color="blue" class="card__color-item">
-                                                            <a class="item" href="#">
-                                                                <img class="active" src="./img/Color_Blue.png"
-                                                                    alt="blue">
-                                                            </a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="silver" class="card__color-item">
-                                                            <a class="item" href="#"><img src="./img/Color_Silver.png"
-                                                                    alt="silver"></a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="gray" class="card__color-item">
-                                                            <a class="item" href="#"><img src="./img/Color_Gray.png"
-                                                                    alt="gray"></a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="gold" class="card__color-item"><a class="item"
-                                                                href="#"><img src="./img/Color_Gold.png" alt="gold"></a>
-                                                        </li>
-                                                    </div>
-                                                </ul>
-                                            </div>
-                                            <div class="card__price">
-                                                <span>10.000¥</span>
-                                            </div>
-                                            <div class="card__presents">
-                                                <p>Tặng mã giảm giá RTYH trị giá 1.000 ¥</p>
-                                                <p>Tặng ốp cường lực con voi</p>
-                                            </div>
-                                            <button class="btn w-100">Mua Ngay</button>
-                                        </div>
-                                    </div>
-                                    <div data-id="ipad_2" class="card swiper-slide">
-                                        <img src="./img/ImgCard_IPhone12ProMax.png" class="card-img-top" alt="CardNo1">
-                                        <div class="card-body">
-                                            <div class="">
-                                                <p class="card-text">iPad 2 Pro Max Quốc Tế
-                                                    Chính Hãng</p>
-                                            </div>
-                                            <div class="card__memory">
-                                                <ul class="row card__memory-content">
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="128" class="card__memory-item"><a
-                                                                class="memory-item active" href="#">128 GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="256" class="card__memory-item"><a
-                                                                class="memory-item" href="#">256
-                                                                GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="512" class="card__memory-item"><a
-                                                                class="memory-item" href="#">512
-                                                                GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="1024" class="card__memory-item"><a
-                                                                class="memory-item" href="#">1TB
-                                                                GB</a></li>
-                                                    </div>
-                                                </ul>
-                                            </div>
-                                            <div class="card__color">
-                                                <ul class="row card__color-content">
-                                                    <div class="col-div col-3">
-                                                        <li data-color="blue" class="card__color-item">
-                                                            <a class="item" href="#">
-                                                                <img class="active" src="./img/Color_Blue.png"
-                                                                    alt="blue">
-                                                            </a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="silver" class="card__color-item">
-                                                            <a class="item" href="#"><img src="./img/Color_Silver.png"
-                                                                    alt="silver"></a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="gray" class="card__color-item">
-                                                            <a class="item" href="#"><img src="./img/Color_Gray.png"
-                                                                    alt="gray"></a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="gold" class="card__color-item"><a class="item"
-                                                                href="#"><img src="./img/Color_Gold.png" alt="gold"></a>
-                                                        </li>
-                                                    </div>
-                                                </ul>
-                                            </div>
-                                            <div class="card__price">
-                                                <span>10.000¥</span>
-                                            </div>
-                                            <div class="card__presents">
-                                                <p>Tặng mã giảm giá RTYH trị giá 1.000 ¥</p>
-                                                <p>Tặng ốp cường lực con voi</p>
-                                            </div>
-                                            <button class="btn w-100">Mua Ngay</button>
-                                        </div>
-                                    </div>
-                                    <div data-id="ipad_3" class="card swiper-slide">
-                                        <img src="./img/ImgCard_IPhone12ProMax.png" class="card-img-top" alt="CardNo1">
-                                        <div class="card-body">
-                                            <div class="">
-                                                <p class="card-text">iPad 2 Pro Max Quốc Tế
-                                                    Chính Hãng</p>
-                                            </div>
-                                            <div class="card__memory">
-                                                <ul class="row card__memory-content">
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="128" class="card__memory-item"><a
-                                                                class="memory-item active" href="#">128 GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="256" class="card__memory-item"><a
-                                                                class="memory-item" href="#">256
-                                                                GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="512" class="card__memory-item"><a
-                                                                class="memory-item" href="#">512
-                                                                GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="1024" class="card__memory-item"><a
-                                                                class="memory-item" href="#">1TB
-                                                                GB</a></li>
-                                                    </div>
-                                                </ul>
-                                            </div>
-                                            <div class="card__color">
-                                                <ul class="row card__color-content">
-                                                    <div class="col-div col-3">
-                                                        <li data-color="blue" class="card__color-item">
-                                                            <a class="item" href="#">
-                                                                <img class="active" src="./img/Color_Blue.png"
-                                                                    alt="blue">
-                                                            </a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="silver" class="card__color-item">
-                                                            <a class="item" href="#"><img src="./img/Color_Silver.png"
-                                                                    alt="silver"></a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="gray" class="card__color-item">
-                                                            <a class="item" href="#"><img src="./img/Color_Gray.png"
-                                                                    alt="gray"></a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="gold" class="card__color-item"><a class="item"
-                                                                href="#"><img src="./img/Color_Gold.png" alt="gold"></a>
-                                                        </li>
-                                                    </div>
-                                                </ul>
-                                            </div>
-                                            <div class="card__price">
-                                                <span>10.000¥</span>
-                                            </div>
-                                            <div class="card__presents">
-                                                <p>Tặng mã giảm giá RTYH trị giá 1.000 ¥</p>
-                                                <p>Tặng ốp cường lực con voi</p>
-                                            </div>
-                                            <button class="btn w-100">Mua Ngay</button>
-                                        </div>
-                                    </div>
-                                    <div data-id="ipad_4" class="card swiper-slide">
-                                        <img src="./img/ImgCard_IPhone12ProMax.png" class="card-img-top" alt="CardNo1">
-                                        <div class="card-body">
-                                            <div class="">
-                                                <p class="card-text">iPad 2 Pro Max Quốc Tế
-                                                    Chính Hãng</p>
-                                            </div>
-                                            <div class="card__memory">
-                                                <ul class="row card__memory-content">
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="128" class="card__memory-item"><a
-                                                                class="memory-item active" href="#">128 GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="256" class="card__memory-item"><a
-                                                                class="memory-item" href="#">256
-                                                                GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="512" class="card__memory-item"><a
-                                                                class="memory-item" href="#">512
-                                                                GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="1024" class="card__memory-item"><a
-                                                                class="memory-item" href="#">1TB
-                                                                GB</a></li>
-                                                    </div>
-                                                </ul>
-                                            </div>
-                                            <div class="card__color">
-                                                <ul class="row card__color-content">
-                                                    <div class="col-div col-3">
-                                                        <li data-color="blue" class="card__color-item">
-                                                            <a class="item" href="#">
-                                                                <img class="active" src="./img/Color_Blue.png"
-                                                                    alt="blue">
-                                                            </a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="silver" class="card__color-item">
-                                                            <a class="item" href="#"><img src="./img/Color_Silver.png"
-                                                                    alt="silver"></a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="gray" class="card__color-item">
-                                                            <a class="item" href="#"><img src="./img/Color_Gray.png"
-                                                                    alt="gray"></a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="gold" class="card__color-item"><a class="item"
-                                                                href="#"><img src="./img/Color_Gold.png" alt="gold"></a>
-                                                        </li>
-                                                    </div>
-                                                </ul>
-                                            </div>
-                                            <div class="card__price">
-                                                <span>10.000¥</span>
-                                            </div>
-                                            <div class="card__presents">
-                                                <p>Tặng mã giảm giá RTYH trị giá 1.000 ¥</p>
-                                                <p>Tặng ốp cường lực con voi</p>
-                                            </div>
-                                            <button class="btn w-100">Mua Ngay</button>
-                                        </div>
-                                    </div>
-                                    <div data-id="ipad_5" class="card swiper-slide">
-                                        <img src="./img/ImgCard_IPhone12ProMax.png" class="card-img-top" alt="CardNo1">
-                                        <div class="card-body">
-                                            <div class="">
-                                                <p class="card-text">iPad 2 Pro Max Quốc Tế
-                                                    Chính Hãng</p>
-                                            </div>
-                                            <div class="card__memory">
-                                                <ul class="row card__memory-content">
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="128" class="card__memory-item"><a
-                                                                class="memory-item active" href="#">128 GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="256" class="card__memory-item"><a
-                                                                class="memory-item" href="#">256
-                                                                GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="512" class="card__memory-item"><a
-                                                                class="memory-item" href="#">512
-                                                                GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="1024" class="card__memory-item"><a
-                                                                class="memory-item" href="#">1TB
-                                                                GB</a></li>
-                                                    </div>
-                                                </ul>
-                                            </div>
-                                            <div class="card__color">
-                                                <ul class="row card__color-content">
-                                                    <div class="col-div col-3">
-                                                        <li data-color="blue" class="card__color-item">
-                                                            <a class="item" href="#">
-                                                                <img class="active" src="./img/Color_Blue.png"
-                                                                    alt="blue">
-                                                            </a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="silver" class="card__color-item">
-                                                            <a class="item" href="#"><img src="./img/Color_Silver.png"
-                                                                    alt="silver"></a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="gray" class="card__color-item">
-                                                            <a class="item" href="#"><img src="./img/Color_Gray.png"
-                                                                    alt="gray"></a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="gold" class="card__color-item"><a class="item"
-                                                                href="#"><img src="./img/Color_Gold.png" alt="gold"></a>
-                                                        </li>
-                                                    </div>
-                                                </ul>
-                                            </div>
-                                            <div class="card__price">
-                                                <span>10.000¥</span>
-                                            </div>
-                                            <div class="card__presents">
-                                                <p>Tặng mã giảm giá RTYH trị giá 1.000 ¥</p>
-                                                <p>Tặng ốp cường lực con voi</p>
-                                            </div>
-                                            <button class="btn w-100">Mua Ngay</button>
-                                        </div>
-                                    </div>
-                                    <div data-id="ipad_6" class="card swiper-slide">
-                                        <img src="./img/ImgCard_IPhone12ProMax.png" class="card-img-top" alt="CardNo1">
-                                        <div class="card-body">
-                                            <div class="">
-                                                <p class="card-text">iPad 2 Pro Max Quốc Tế
-                                                    Chính Hãng</p>
-                                            </div>
-                                            <div class="card__memory">
-                                                <ul class="row card__memory-content">
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="128" class="card__memory-item"><a
-                                                                class="memory-item active" href="#">128 GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="256" class="card__memory-item"><a
-                                                                class="memory-item" href="#">256
-                                                                GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="512" class="card__memory-item"><a
-                                                                class="memory-item" href="#">512
-                                                                GB</a></li>
-                                                    </div>
-                                                    <div class="col-div col-4 col-md-3">
-                                                        <li data-capacity="1024" class="card__memory-item"><a
-                                                                class="memory-item" href="#">1TB
-                                                                GB</a></li>
-                                                    </div>
-                                                </ul>
-                                            </div>
-                                            <div class="card__color">
-                                                <ul class="row card__color-content">
-                                                    <div class="col-div col-3">
-                                                        <li data-color="blue" class="card__color-item">
-                                                            <a class="item" href="#">
-                                                                <img class="active" src="./img/Color_Blue.png"
-                                                                    alt="blue">
-                                                            </a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="silver" class="card__color-item">
-                                                            <a class="item" href="#"><img src="./img/Color_Silver.png"
-                                                                    alt="silver"></a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="gray" class="card__color-item">
-                                                            <a class="item" href="#"><img src="./img/Color_Gray.png"
-                                                                    alt="gray"></a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col-div col-3">
-                                                        <li data-color="gold" class="card__color-item"><a class="item"
-                                                                href="#"><img src="./img/Color_Gold.png" alt="gold"></a>
-                                                        </li>
-                                                    </div>
-                                                </ul>
-                                            </div>
-                                            <div class="card__price">
-                                                <span>10.000¥</span>
-                                            </div>
-                                            <div class="card__presents">
-                                                <p>Tặng mã giảm giá RTYH trị giá 1.000 ¥</p>
-                                                <p>Tặng ốp cường lực con voi</p>
-                                            </div>
-                                            <button class="btn w-100">Mua Ngay</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-button-prev">
-                                    <i class="fa fa-chevron-left"></i>
-                                </div>
-                                <div class="swiper-button-next">
-                                    <i class="fa fa-chevron-right"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="ipad2" role="tabpanel" aria-labelledby="iphone11">
-
-                        </div>
-                        <div class="tab-pane fade" id="ipad3" role="tabpanel" aria-labelledby="iphoneX">
-
-                        </div>
-                        <div class="tab-pane fade" id="ipad4" role="tabpanel" aria-labelledby="iphone8">
-
-                        </div>
-                        <div class="tab-pane fade" id="ipad5" role="tabpanel" aria-labelledby="iphone7">
-
-                        </div>
-                        <div class="tab-pane fade" id="ipad6" role="tabpanel" aria-labelledby="iphone6">
-
-                        </div>
-                        <div class="tab-pane fade" id="ipad7" role="tabpanel" aria-labelledby="oldIPhone">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </main>
         <!-- FOOTER  -->
-        <footer>
-            <div class="footer__content section">
-                <div class="container-md">
+        <footer class="product__detail-footer">
+            <div class="footer__content section mx-0">
+                <div class="container-md px-0">
                     <div class="section_pc">
                         <div class="main-content content1 d-md-none">
                             <div class="row">
-                                <div class="col-7 col-md-3 footer__item">
+                                <div class="col-7 col-md-3 footer__item px-0">
                                     <h6>Thông Tin Công Ty</h6>
                                     <div class="underLine"></div>
                                     <p>Giới thiệu</p>
                                     <p>Hướng dẫn mua hàng</p>
                                     <p>Thẻ ngân hàng</p>
                                 </div>
-                                <div class="col-5 col-md-3 footer__item">
+                                <div class="col-5 col-md-3 footer__item px-0">
                                     <h6>Chính Sách</h6>
                                     <div class="underLine"></div>
                                     <p>Chính sách bảo hành</p>
@@ -2655,13 +2202,13 @@
                                     <p>Bảo hành tại Nhật Bản</p>
                                     <p>Bảo hành tại Việt Nam</p>
                                 </div>
-                                <div class="col-7 col-md-3 footer__item">
+                                <div class="col-7 col-md-3 footer__item px-0 mb-0">
                                     <h6>Liên Hệ</h6>
                                     <div class="underLine"></div>
                                     <p>HotLine : 0809.346.6789</p>
                                     <p>Email : hoanghai1710021@gmail.com</p>
                                 </div>
-                                <div class="col-5 col-md-3  footer__item">
+                                <div class="col-5 col-md-3  footer__item px-0 mb-0">
                                     <h6>Các Chi Nhánh</h6>
                                     <div class="underLine"></div>
                                     <p>Chi nhánh Otsuka Tokyo</p>
@@ -2672,14 +2219,14 @@
                         </div>
                         <div class="main-content content2">
                             <div class="row content2">
-                                <div class="col-4 col-md-3 footer__item">
+                                <div class="col-4 col-md-3 footer__item px-0">
                                     <h6>Thông Tin Công Ty</h6>
                                     <div class="underLine"></div>
                                     <p>Giới thiệu</p>
                                     <p>Hướng dẫn mua hàng</p>
                                     <p>Thẻ ngân hàng</p>
                                 </div>
-                                <div class="col-4 col-md-3 footer__item">
+                                <div class="col-4 col-md-3 footer__item px-0">
                                     <h6>Chính Sách</h6>
                                     <div class="underLine"></div>
                                     <p>Chính sách bảo hành</p>
@@ -2687,20 +2234,19 @@
                                     <p>Bảo hành tại Nhật Bản</p>
                                     <p>Bảo hành tại Việt Nam</p>
                                 </div>
-                                <div class="col-4 col-md-3 footer__item">
+                                <div class="col-4 col-md-3 footer__item px-0">
                                     <h6>Các Chi Nhánh</h6>
                                     <div class="underLine"></div>
                                     <p>Chi nhánh Otsuka Tokyo</p>
                                     <p>Chi nhánh Osu Nagoya</p>
                                     <p>Chi nhánh Việt Nam</p>
                                 </div>
-                                <div class="col-12 col-md-3 footer__item">
+                                <div class="col-12 col-md-3 footer__item mb-0 px-0">
                                     <h6>Liên Hệ</h6>
                                     <div class="underLine"></div>
                                     <p>HotLine : 0809.346.6789</p>
                                     <p>Email : hoanghai1710021@gmail.com</p>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -2708,32 +2254,7 @@
             </div>
         </footer>
     </div>
-<!-- MODAL -->
-<div class="popup-newsletter modal fade show" id="popupNewsletter" tabindex="-1" role="dialog" aria-modal="true" style="padding-right: 6px; display: block;">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">                    
-                <button type="button" class="popup-newsletter__close" data-dismiss="modal" aria-label="Close">
-                    <i class="fa fa-times"></i>
-                </button>
-             </div>                
-            <div class="popup-newsletter__register modal-body">
-                <h3>Nhận tin tức giảm giá</h3>
-                <p>Khi đăng kí nhận bản tin từ Hoàng Hải Store!</p>
-                <form class="popup-newsletter__form" action="https://hoanghaimobile.jp/email/subcribe" method="GET">
-                    <input hidden="" id="type" type="text" value="subcribe">
-                    <div class="form-group">
-                        <input type="email" class="popup-newsletter__email form-control" placeholder="Nhập email của bạn" required="">
-                    </div>
-                    <div class="popup-newsletter__commit">
-                        <i class="fa fa-check-square"></i> Tôi đồng ý với <a href="" target="_blank">điều khoản</a> của Hoàng Hải Store
-                    </div>
-                    <button type="submit" class="popup-newsletter__submit btn btn-primary">Đăng ký ngay</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>  
+
     <!-- jquery  -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -2761,6 +2282,13 @@
 
     <!-- ACTIVE CLASS JS -->
     <script src="./js/CreateActiveMenu.js"></script>
+
+    <!-- EASYZOOM JS -->
+    <script src="./js/easyzoom.js"></script>
+    <script src="./js/EasyZoomMain.js"></script>
+
+    <!-- LIGHT BOX JS -->
+    <script src="./js/lightbox.min.js"></script>
 
     <!-- MAIN JS -->
     <script src="./js/main.js"></script>

@@ -13,7 +13,8 @@
                 font-size: $fs-1;
                 font-weight: $fw-2;
                 line-height: $line-height-0 - 5;
-                margin-bottom: $mg-0;
+                margin-bottom: $mg-0;    
+                color: $color-black-0;            
             }
     
             .card__memory-content {
@@ -575,6 +576,7 @@
                 font-weight: $fw-2;
                 line-height: $line-height-0;
                 margin-bottom: $mg-1;
+                color: $color-black-0;
             }
     
             .card__memory-content {
@@ -672,6 +674,9 @@
                 transition: all 0.5s;
                 &:hover {
                     background: $color-red-3-pc
+                }
+                &:focus{
+                    box-shadow: none;
                 }
             }
         }

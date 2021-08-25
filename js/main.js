@@ -1,4 +1,5 @@
 // =======================================================================
+// HOME AND LISTPRODUCT
 //Xử lí sự kiện khi click vào dung lượng
 $('.card__memory-item').on('click', function (e) {
     e.preventDefault();
@@ -23,6 +24,7 @@ $('.card__color-item').on('click', function (e) {
     var product_id = this.closest('.card.swiper-slide').getAttribute('data-id');
     console.log(product_id);
 })
+    
 // =======================================================================
 // =======================================================================
 //SEARCH MENU PC VERSION

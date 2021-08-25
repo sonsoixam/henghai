@@ -1,0 +1,183 @@
+// Swiper
+// Home Page
+.swiper-container.selling_products {
+    overflow: hidden;
+    .swiper-button-prev {
+        left: 0;
+        height: $hg-4;
+        width: $whpx-2;
+        border-radius: 0 100px 100px 0;
+        @include styleText($color-gray-3, $fs-6, $fw-2);
+        background-color: rgba(255, 255, 255, 0.712);
+        &:hover {
+            i {
+                color: $color-red-0;
+            }
+        }
+        i {
+            position: absolute;
+            top: 15px;
+            left: 2px;
+        }
+        &.swiper-button-disabled {
+            opacity: 0;
+        }
+        &::after {
+            content: none;
+        }
+    }
+    .swiper-button-next {
+        right: 0;
+        height: $hg-4;
+        width: $whpx-2;
+        border-radius: 100px 0 0 100px;
+        @include styleText($color-gray-3, $fs-6, $fw-2);
+        background-color: rgba(255, 255, 255, 0.712);
+        &:hover {
+            i {
+                color: $color-red-0;
+            }
+        }
+        i {
+            position: absolute;
+            top: 15px;
+            right: 2px;
+        }
+        &.swiper-button-disabled {
+            opacity: 0;
+        }
+        &::after {
+            content: none;
+        }
+    }
+}
+// Products Detail ipod type
+.swiper-container.product__img-thumbs {
+    overflow: hidden;
+    .swiper-wrapper {
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &.swiper-slide-thumb-active{
+                img{
+                    border: 2px solid $color-red-0;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+}
+.swiper-container.product__img {
+    overflow: hidden;
+    .swiper-wrapper {
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .swiper-button-prev {
+        margin-left: 5px;
+        left: 0;
+        height: $hg-4;
+        width: $whpx-2;
+        border-radius: 0 100px 100px 0;
+        @include styleText($color-gray-3, $fs-6, $fw-2);
+        background-color: rgba(255, 255, 255, 0.712);
+        &:hover {
+            i {
+                color: $color-red-0;
+            }
+        }
+        i {
+            position: absolute;
+            top: 15px;
+            left: 2px;
+        }
+        &.swiper-button-disabled {
+            opacity: 0;
+        }
+        &::after {
+            content: none;
+        }
+    }
+    .swiper-button-next {
+        margin-right: 5px;
+        right: 0;
+        height: $hg-4;
+        width: $whpx-2;
+        border-radius: 100px 0 0 100px;
+        @include styleText($color-gray-3, $fs-6, $fw-2);
+        background-color: rgba(255, 255, 255, 0.712);
+        &:hover {
+            i {
+                color: $color-red-0;
+            }
+        }
+        i {
+            position: absolute;
+            top: 15px;
+            right: 2px;
+        }
+        &.swiper-button-disabled {
+            opacity: 0;
+        }
+        &::after {
+            content: none;
+        }
+    }
+}
+
+// Products Detail product photo
+.swiper-container.product__photo-carousel {
+    overflow: hidden;
+    .swiper-button-prev {
+        left: 0;
+        height: $hg-4;
+        width: $whpx-2;
+        border-radius: 0 100px 100px 0;
+        @include styleText($color-gray-3, $fs-6, $fw-2);
+        background-color: rgba(255, 255, 255, 0.712);
+        &:hover {
+            i {
+                color: $color-red-0;
+            }
+        }
+        i {
+            position: absolute;
+            top: 15px;
+            left: 2px;
+        }
+        &.swiper-button-disabled {
+            opacity: 0;
+        }
+        &::after {
+            content: none;
+        }
+    }
+    .swiper-button-next {
+        right: 0;
+        height: $hg-4;
+        width: $whpx-2;
+        border-radius: 100px 0 0 100px;
+        @include styleText($color-gray-3, $fs-6, $fw-2);
+        background-color: rgba(255, 255, 255, 0.712);
+        &:hover {
+            i {
+                color: $color-red-0;
+            }
+        }
+        i {
+            position: absolute;
+            top: 15px;
+            right: 2px;
+        }
+        &.swiper-button-disabled {
+            opacity: 0;
+        }
+        &::after {
+            content: none;
+        }
+    }
+}
