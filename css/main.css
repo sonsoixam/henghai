@@ -1134,12 +1134,12 @@
   }
   .card .card-body .card__memory-content {
     margin: 0;
-    justify-content: space-between;
   }
   .card .card-body .card__memory-content .col-div {
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 5px;
+    margin-right: 12px;
   }
   .card .card-body .card__memory-content .col-div .card__memory-item {
     display: block;
@@ -1237,34 +1237,13 @@
   }
 }
 
-@media screen and (max-width: 767.98px) and (max-width: 370px) {
-  .card .card-body .card__memory-content .col-div .card__memory-item .memory-item {
-    padding: 4px 12px 4px 12px;
-  }
-}
-
-@media screen and (max-width: 767.98px) and (max-width: 345px) {
-  .card .card-body .card__memory-content .col-div .card__memory-item .memory-item {
-    padding: 4px 8px 4px 8px;
-  }
-}
-
 @media screen and (max-width: 767.98px) and (min-width: 460px) {
   .card .card-body .card-text {
     font-size: 12px;
     line-height: 18px;
   }
-  .card .card-body .card__memory-content .col-div .card__memory-item .memory-item {
-    padding: 4px 8px;
-  }
   .card .card-body .card__presents p {
     font-size: 10px;
-  }
-}
-
-@media screen and (max-width: 767.98px) and (min-width: 480px) {
-  .card .card-body .card__memory-content .col-div .card__memory-item .memory-item {
-    padding: 4px;
   }
 }
 
@@ -1286,9 +1265,6 @@
     font-size: 12px;
     line-height: 18px;
   }
-  .card .card-body .card__memory-content .col-div .card__memory-item .memory-item {
-    padding: 4px 8px;
-  }
   .card .card-body .card__price span {
     font-size: 12px;
   }
@@ -1302,9 +1278,6 @@
     font-size: 12px;
     line-height: 18px;
   }
-  .card .card-body .card__memory-content .col-div .card__memory-item .memory-item {
-    padding: 4px 4px;
-  }
   .card .card-body .card__price span {
     font-size: 12px;
   }
@@ -1317,9 +1290,6 @@
   .card .card-body .card-text {
     font-size: 12px;
     line-height: 18px;
-  }
-  .card .card-body .card__memory-content .col-div .card__memory-item .memory-item {
-    padding: 4px 4px;
   }
   .card .card-body .card__price span {
     font-size: 12px;
